@@ -4,6 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubicación</title>
+    <style>
+        #lima{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c4eca9;
+        }
+
+        .place-1 {
+            background-color: #fff;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 0 10px #6ecef11a;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .place img {
+            width: 100%;
+            height: auto;
+        }
+        .card-box{
+            padding: 20px;
+            text-align: center;
+        }
+
+        .mapa-1{
+        background-color: #007bff;
+        padding: 25px;
+        text-align: center;
+        
+        }
+
+        .mapa-1 a {
+            color: #fff;
+        }
+    
+    </style>
+    
 </head>
 <body >
     <nav>
@@ -23,14 +66,21 @@
         <a href="#arequipa">Arequipa</a> 
     </div> 
     
-    <div id="lima" style="height: 400px;"> 
-        <h2>Lima</h2> 
-        <input type="text">
-        <button>Buscar</button><br>
-        <div id="map-lima" style="height: 600px; width: 100%;">
-            <img src="/img/mapa.jpg" alt="Coffee 1" width="50%" height="50%">
-        </div> 
-    </div> 
+    <div id="lima">
+            <div class="place-1">
+                <div class="card-1">
+                    <img src="/img/mapa1.jpg" alt="Interior del local">
+                </div>
+               
+                <div class="card-box" style="background:#F5EDDE; height:230px">
+                    <h2 class="card-title" style="color:#920A2B"><br>Local Carabaya</h2>
+                    <p class="description-place"  style="color: #281900;">
+                        Jr. Carabaya 552<br>Lima - Cercado de Lima<br><br>Horario<br>7 A.M. A 22:30 P.M.</p>
+                </div>
+                    <div class="mapa-1" ><a href="https://maps.app.goo.gl/hBcMfb7WECDyys5YA" class="bton">VER MAPA</a>
+                    </div>
+            </div>
+       </div>
     
     <div id="cusco" style="height: 400px;"> 
         <h2>Cusco</h2> 
