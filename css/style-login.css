@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(img/cafeteriaimg.jpg);
+    /*background-image: url(img/cafeteriaimg.jpg);*/
     background-size: cover;
     background-position: center;
 }
