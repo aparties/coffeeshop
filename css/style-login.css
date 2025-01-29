@@ -13,3 +13,21 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color:rgb(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    display: block;
+    margin-inline-start: 4px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
