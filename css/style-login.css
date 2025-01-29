@@ -46,6 +46,7 @@ header .navigation ul li{
 header .navigation ul li a{
     position: relative;
     font-size: 1.1em;
+    -webkit-text-stroke: 1px #05190A;
     color: #ffffff;
     text-decoration: none;
     font-weight: 800;
