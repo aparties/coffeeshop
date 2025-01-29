@@ -19,7 +19,7 @@ header{
     top:0;
     left:0;
     width: 100%;
-    padding: 20px auto;
+    padding: 20px 10px;
     background-color:rgb(255,255,255,0.2);
     backdrop-filter:blur(10px);
     display: flex;
@@ -34,7 +34,7 @@ header{
 
 header .navigation ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 header .navigation ul li{
@@ -49,8 +49,8 @@ header .navigation ul li a{
     color: #ffffff;
     text-decoration: none;
     font-weight: 800;
-    margin-left: 40px;
-    padding: 7px 13px;
+    margin-left: 20px;
+    padding: 7px 7px;
     border-radius: 3px;
     text-transform: uppercase;
 }
