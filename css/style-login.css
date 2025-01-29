@@ -54,3 +54,29 @@ header .navigation ul li a{
     border-radius: 3px;
     text-transform: uppercase;
 }
+
+header .navigation ul li a::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    transform-origin: 50% 50%;
+    transform: scalex(0);
+    transition: transform .5s, background-color .5s;
+    box-shadow: 0 0 10px rgba(206, 221, 227, 0.8);
+    
+}
+
+header .navigation ul li a:hover::after{
+    transform-origin: left;
+    transform:scalex(1);
+    background: linear-gradient(to right, #66b2ff, #e0f7ff);
+}
+
+ul li a.active, ul li a:hover{
+    background: #011706;
+    transition: .5s;
+}
