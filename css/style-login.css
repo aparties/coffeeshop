@@ -116,3 +116,36 @@ ul li a.active, ul li a:hover{
 #check{
     display:none;
 }
+
+@media(max-width:858px){
+    .check-btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:50%;
+        height: 70vh;
+        background: #2c5038;
+        top: 100px;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+        border: 2px solid #c9c8c8;
+        border-radius: 6px;
+        box-shadow: 0 0 30px rgba(0, 0, 0 , 0.5);
+    }
+
+    header .navigation ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header .navigation ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
