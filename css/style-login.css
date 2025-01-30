@@ -351,13 +351,13 @@ ul li a.active, ul li a:hover{
 
 /* footer */
 .footer{
-    position: absolute;
+    position:fixed;
     bottom: 0;
     width: 100%;
-    color: #fff;
+    color: #6c582ee1;
     padding: 10px 0;
     text-align: center;
-    background-color: rgb(255,255,255,0.2);
+    background-color: rgba(243, 237, 237, 0.879);
     backdrop-filter: blur(10px);
 }
 
@@ -370,7 +370,7 @@ ul li a.active, ul li a:hover{
 }
 
 .social-icons a{
-    color: #fff;
+    color: #6c582ee1;
     font-size: 1.5em;
     margin: 0 10px;
     text-decoration: none;
