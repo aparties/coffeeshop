@@ -1,120 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubicación</title>
-    <style>
-        #ubicacion{
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #c4eca9;
-        }
-
-        .place-1 {
-            background-color: #fff;
-            width: 80%;
-            max-width: 500px;
-            box-shadow: 0 0 10px #6ecef11a;
-            margin-top: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .place img {
-            width: 100%;
-            height: auto;
-        }
-        .card-box{
-            padding: 20px;
-            text-align: center;
-        }
-
-        .mapa-1{
-        background-color: #007bff;
-        padding: 25px;
-        text-align: center;
-        border: solid 2px;
-        }
-
-        .mapa-1 a {
-            
-            color: #fff;
-        }
-    
-    </style>
-    
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style-login.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style-ubicacion.css">
 </head>
-<body >
-    <nav>
-        <a href="/main.html">Principal</a>
-        <a href="/nosotros.html">Nosotros</a>
-        <a href="/contacto.html">Contacto</a>
-        <a href="/categorias.html">Categorias</a>
-        <a href="/login.html">Logín</a>
-        <a href="/pedido.html">Pedido</a>
-        <a href="/ubicacion.html">Ubicación</a>
-    </nav>
-    <div id="ubicacion">
-    <h1>Encuentranos en las siguientes tiendas.</h1>
-    <div class="menu"> 
-        <a href="#lima">Lima</a> 
-        <a href="#cusco">Cusco</a> 
-        <a href="#arequipa">Arequipa</a> 
-    </div> 
+
+<body style="background-image: url(img/cafeteriaimg.jpg)">
+    <header>
+        <div class="navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="check-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Coffee Shop </label>
+            <ul>
+                <li><a href="/main.html">Home</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="/categorias.html">Categorias</a></li>
+                <li><a href="/ubicacion.html">Ubicación</a></li>
+                <li><a href="/pedido.html">Pedidos</a></li>
+                <li><a id="bton-login" href="/login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--ubicacion------------------------------------------------------------------>
+
+
+
     
-    <div id="lima">
-            <div class="place-1">
-                <div class="card-1">
-                    <img src="/img/mapa1.jpg" alt="Interior del local">
+    <!--pie de paginaaa------------------------------------------------------------->
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Coffee Shop All rights reserved</p>
+                <div class="social-icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
                 </div>
-               
-                <div class="card-box" style="background:#F5EDDE; height:230px">
-                    <h2 class="card-title" style="color:#920A2B"><br>Local Carabaya</h2>
-                    <p class="description-place"  style="color: #281900;">
-                        Jr. Carabaya 552<br>Lima - Cercado de Lima<br><br>Horario<br>7 A.M. A 22:30 P.M.</p>
-                </div>
-                    <div class="mapa-1" ><a href="https://maps.app.goo.gl/hBcMfb7WECDyys5YA" class="bton">VER MAPA</a>
-                    </div>
             </div>
-       </div>
-    
-    <div id="cuzco">
-            <div class="place-1">
-                <div class="card-1">
-                    <img src="/img/mapa1.jpg" alt="Interior del local">
-                </div>
-               
-                <div class="card-box" style="background:#F5EDDE; height:230px">
-                    <h2 class="card-title" style="color:#920A2B"><br>Local Centro de Cuzco</h2>
-                    <p class="description-place"  style="color: #281900;">
-                       Calle Pampa De Castillo 365 <br>Centro - Cuzco<br><br>Horario<br>7 A.M. A 22:30 P.M.</p>
-                </div>
-                    <div class="mapa-1" >
-                        <a href="https://maps.app.goo.gl/bmQsMXTNT6ZSzYrs6" class="bton">VER MAPA</a>
-                    </div>
-            </div>
-       </div>
-        
-        <div id="arequipa">
-            <div class="place-1">
-                <div class="card-1">
-                    <img src="/img/mapa1.jpg" alt="Interior del local">
-                </div>
-               
-                <div class="card-box" style="background:#F5EDDE; height:230px">
-                    <h2 class="card-title" style="color:#920A2B"><br>Local Arequipa</h2>
-                    <p class="description-place"  style="color: #281900;">
-                        Av. Andres Martinez 352<br>Arequipa - Arequipa<br><br>Horario<br>7 A.M. A 22:30 P.M.</p>
-                </div>
-                    <div class="mapa-1" ><a href="https://maps.app.goo.gl/1VkBpkfnWQVAucMv8" class="bton">VER MAPA</a>
-                    </div>
-            </div>
-       </div>
+        </footer>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
+
