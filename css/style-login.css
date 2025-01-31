@@ -9,7 +9,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /*background-image: url(img/cafeteriaimg.jpg);*/
     background-size: cover;
     background-position: center;
 }
@@ -52,12 +51,16 @@ header .navigation ul li a{
     text-decoration: none;
     font-weight: 800;
     margin-left: 20px;
-    padding: 7px 7px;
+    padding: 3px 7px;
     border-radius: 3px;
     text-transform: uppercase;
 }
 
-header .navigation ul li a::after{
+header .navigation ul li a:hover {
+    background-color: #05190A;
+}
+
+header .navigation ul li a::after {
     content: " ";
     position: absolute;
     left: 0;
@@ -65,39 +68,32 @@ header .navigation ul li a::after{
     width: 100%;
     height: 8px;
     border-radius: 4px;
-    transform-origin: 50% 50%;
-    transform: scalex(0);
+    transform: scaleX(0);
     transition: transform .5s, background-color .5s;
     box-shadow: 0 0 10px rgba(206, 221, 227, 0.8);
-    
 }
 
-header .navigation ul li a:hover::after{
+header .navigation ul li a:hover::after {
     transform-origin: left;
-    transform:scalex(1);
-    background: linear-gradient(to right, #66b2ff, #e0f7ff);
-}
+    transform: scaleX(1);
+    background: linear-gradient(to right, #66b2ff, #e0f7ff);}
 
-ul li a.active, ul li a:hover{
-    background: #011706;
-    transition: .5s;
-}
 
-.bton-login{
-    width: 130px;
-    height: 50px;
+
+
+#bton-login{
     background: transparent;
     border: 2px solid #fff;
-    outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1.3em;
-    color:#fff;
-    font-weight: 500;
-    margin-left: 40px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-left: 25px;
+    -webkit-text-stroke: 1px #05f140;
 }
 
-.bton-login:hover{
+#bton-login:hover{
     background-color: #05190A;
     color: #FFF;
     transition: .5s;
@@ -111,6 +107,7 @@ ul li a.active, ul li a:hover{
     margin-right: 10px;
     cursor: pointer;
     display: none;
+    -webkit-text-stroke: 1px #05f140;
 }
 
 #check{
@@ -124,7 +121,7 @@ ul li a.active, ul li a:hover{
     ul{
         position: fixed;
         width:50%;
-        height: 70vh;
+        height: 65vh;
         background: #2c5038;
         top: 100px;
         left: -100%;
@@ -137,12 +134,12 @@ ul li a.active, ul li a:hover{
 
     header .navigation ul li{
         display: block;
-        margin: 50px 0;
+        margin: 40px 0;
         line-height: 30px;
     }
 
     header .navigation ul li a{
-        font-size: 20px;
+        font-size: 1.2em;
     }
 
     #check:checked ~ ul{
@@ -159,6 +156,8 @@ ul li a.active, ul li a:hover{
     padding: 0 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+    -webkit-text-stroke: 1px brown;
+
 }
 
 .cover-box{

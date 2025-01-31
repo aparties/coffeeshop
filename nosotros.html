@@ -5,17 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="stylesheet" href="css/style-nosotros.css">
+    <link rel="stylesheet" href="css/style-cabecera.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .grid_principal{
+            margin-top: 80px;
+        }
+    </style>
+
 </head>
+
 <body>
-    <nav>
-        <a href="/main.html">Principal</a>
-        <a href="/nosotros.html">Nosotros</a>
-        <a href="/contacto.html">Contacto</a>
-        <a href="/categorias.html">Categorias</a>
-        <a href="/ubicacion.html">Ubicación</a>
-        <a href="/login.html">Logín</a>
-        <a href="/pedido.html">Pedido</a>
-    </nav>
+    <header id="header">
+        <div class="navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="check-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Coffee Shop </label>
+            <ul>
+                <li><a href="/main.html">Home</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="/categorias.html">Categorias</a></li>
+                <li><a href="/ubicacion.html">Ubicación</a></li>
+                <li><a href="/pedido.html">Pedidos</a></li>
+                <li><a id="bton-login" href="/login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
     <div class="grid_principal">
 
         <div class="grid_nosotros">
