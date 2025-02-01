@@ -226,6 +226,8 @@ header .navigation ul li a:hover, #bton-login:hover{
     transition: .5s;
 }
 
+/*al colocar el clic en el input se
+desplaza -10px top arriba*/
 .input-box input:focus~label,
 .input-box input:valid~label{
     top: -10px
