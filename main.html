@@ -4,45 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
+    <link rel="stylesheet" href="css/style-login.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-       header {
-            text-align: center;
-            color: white;
-            font-size: 12px;
-            background: rgba(0, 0, 0, 0.5);
-       }
-       
-
-        nav {
-            background-color: #8b5a2b;   
-        }
- 
-        
-        nav a {
-            color: white;
-            font-size: 18px;
-        }
-    </style>
 </head>
-<body>
+<body style="background-image: url(img/cafeteriaimg.jpg)">
     <header>
-        <h1><strong>Coffee Shop</strong></h1>
-        <h2 ><em>No hay sueños grandes, hay cafes demasiado cortos. Hay que crecer.</em></h2>
-    </header>
+        <div class="navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="check-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Coffee Shop </label>
+            <ul>
+                <li><a href="/main.html">Home</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="/categorias.html">Categorias</a></li>
+                <li><a href="/ubicacion.html">Ubicación</a></li>
+                <li><a href="/pedido.html">Pedidos</a></li>
+                <li><a id="bton-login" href="/login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>    
 
-    <nav>
-        <a href="/main.html">Principal</a>
-        <a href="/nosotros.html">Nosotros</a>
-        <a href="/contacto.html">Contacto</a>
-        <a href="/categorias.html">Categorias</a>
-        <a href="/ubicacion.html">Ubicación</a>
-        <a href="/login.html">Logín</a>
-        <a href="/pedido.html">Pedido</a>
-    </nav>
 
     <div id="principal" >
         <h2>Principal</h2>
@@ -75,8 +60,21 @@
         </div>
     </div>
 
-    <footer >
-        <p><strong>&copy; 2025 Coffee Shop. Derechos Reservados</strong></p>
-    </footer>
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Coffee Shop All rights reserved</p>
+                <div class="social-icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
