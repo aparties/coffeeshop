@@ -181,38 +181,9 @@ header .navigation ul li a:hover, #bton-login:hover{
     }
 }
 
-/* .cover-box.active-popup{
-    transform: scale(1);
-}
-
-.cover-box.active{
-    height: 520px;
-} */
-
 .cover-box .form-box{
     width: 100%;
     padding: 40px;
-}
-
-/* .cover-box .form-box.login{
-    transition: transform .50s ease;
-    transform: translateX(0);
-}
-
-.cover-box.active .form-box.login{
-    transition: none;
-    transform: translateX(-400px);
-} */
-
-.cover-box .form-box.register{
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
-}
-
-.cover-box.active .form-box.register{
-    transition: transform .50s ease;
-    transform: translateX(0);
 }
 
 .cover-box .icon-close{
@@ -233,7 +204,7 @@ header .navigation ul li a:hover, #bton-login:hover{
 
 .form-box h2{
     font-size: 2em;
-    color: #05190A;
+    color: #0a0a0a;
     text-align: center;
 }
 
@@ -322,15 +293,15 @@ header .navigation ul li a:hover, #bton-login:hover{
 
 
 .login-register{
-    font-size: .9em;
-    color: #c9c8c8;
+    font-size: 1.1em;
+    color: #383333;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-register p a{
-    color: #9a9a9a;
+    color: #e1dada;
     text-decoration: none;
     font-weight: 600;
 }
