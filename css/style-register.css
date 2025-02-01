@@ -194,22 +194,6 @@ header .navigation ul li a:hover, #bton-login:hover{
     padding: 40px;
 }
 
-/* .cover-box .form-box.login{
-    transition: transform .50s ease;
-    transform: translateX(0);
-}
-
-.cover-box.active .form-box.login{
-    transition: none;
-    transform: translateX(-400px);
-} */
-
-/* .cover-box .form-box.register{
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
-} */
-
 .cover-box.active .form-box.register{
     transition: transform .50s ease;
     transform: translateX(0);
