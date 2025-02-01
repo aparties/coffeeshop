@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="css/style-login.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style-contacto.css" type="text/css">
 </head>
 
-<body style="background-image: url(img/cafeteriaimg.jpg)">
+<body style="background-color: #e9cdbb">
     <header>
         <div class="navigation">
             <input type="checkbox" id="check">
@@ -29,36 +30,61 @@
         </div>
     </header>
 
+    <div class="cuerpo">
+    <div class="div">        
+        
+            <h1 style= color:brown><center>Estamos listos para atenderte!!</center></h1>
+            <p>Para más información, contáctanos al correo: <a href="mailto:info@coffeeshop.com">info@coffeeshop.com</a></p>
+            <p>Teléfono: +51 958 345 312</p>
+            <p>Dirección: Calle Cuzco 271, Lince-Lima</p>
+ 
+            <form >
+                <div class="input-group">
+                    <label for="asunto">Asunto</label>
+                    <select name="Asunto">
+                        <option>Consulta</option>
+                        <option>Sugerencia</option>
+                        <option>Comentario</option>
+                    </select>
 
-    <div id="contacto" >
-        <h2>Contacto</h2>
-        <p>Para más información, contáctanos al correo: <a href="mailto:info@coffeeshop.com">info@coffeeshop.com</a></p>
-        <p>Teléfono: +511 958 345 312</p>
-        <p>Dirección: Calle Cuzco 271, Lince-Lima</p>
-        <form>
-            <table>
-                <tr>
-                    <td><label for="name1">Nombre:</label></td>
-                    <td><input id="name1" type="text" name="name" placeholder="Nombre" required></td>
-                 </tr> 
-                <tr>  
-                    <td><label for="email1">Email:</label></td>
-                    <td><input id="email1" type="email" name="email" placeholder="Correo Electrónico" required></td>
-                </tr>
-                <tr>
-                    <td><label for="message">Comentario:</label></td>
-                    <td><textarea id="message" name="message" rows="4" placeholder="Mensaje" required></textarea></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Enviar"></button></td>
-                    <td><input type="reset" value="Limpiar"></button></td>
-                </tr>
-                
-            </table>
+                    <label for="nombre">Nombres</label>
+                    <input id="idNombre"type="text" name="txtNombre" value="" placeholder="Nombre"required>
+                    
+                   <label for="apellidos">Apellidos</label>
+                   <input id="idApellido"type="text" name="txtApellidos" value="" placeholder="Apellidos"required>
+                        
+                    <label for="telefono">Telefono de contacto</label>
+                    <input id="idNumber"type="number" name="txtTelefono" value="" placeholder="Telefono de Contacto"required>
+                        
+                    <label for="localidad">Localidad</label>
+                    <select name="localidad">
+                        <option>Jiron Caraballa 552, Lima</option>
+                        <option>Calle Pampa De Castillo 365 Cusco</option>
+                        <option>Avenida Andres Martinez 352, Arequipa</option>
+                        <option>Jiron Pizarro 123, Trujillo</option>
+                        <option>Avenida Huancavelica 456, Huancayo</option>
+                        <option>Avenida San Martín 789, Tacna</option>
+                        <option>Jiron Ayacucho 202, Piura</option>
+                        <option></option>
+                    </select>
+                    
+                    <label for="email">Correo Electrónico</label>
+                    <input id="idEmail"type="email" name="txtEmail" value="" placeholder="Correo Electrónico"required>
+                    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="idMensaje" name="txtMensaje" rows="4" placeholder="Mensaje" required></textarea>
+                </div>
+
+                    <input class="btn" type="submit" name="btnEnviar" value="Enviar">
             
-        </form>
+                
+            </form>
+
     </div>
-    
+
+    <div class="divImg">
+        <img src="img/cofeShop.jpg">
+    </div>
     </div>
     <div class="footer">
         <footer>
@@ -79,5 +105,3 @@
 </body>
 
 </html>
-
-
