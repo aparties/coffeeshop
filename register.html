@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style-login.css" type="text/css">
+    <link rel="stylesheet" href="css/style-register.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body style="background-image: url(img/cafeteriaimg.jpg)">
@@ -29,15 +29,22 @@
 
     <div class="cover-box">
         <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
-        <div class="form-box login">
-            <h2>Login</h2>
+        
+
+<!--registration-->
+        <div class="form-box register">
+            <h2>Register</h2>
             <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label >Usarname</label>
+                </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
                     <input type="email" required>
                     <label >Email</label>
                 </div>
-
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
                     <input type="password" required>
@@ -45,12 +52,12 @@
                 </div>
                 
                 <div class="remenber-forgot">
-                    <label for=""><input type="checkbox">Remenber me</label>
+                    <label for=""><input type="checkbox">Agree to terms & conditions</label>
                     <a href="#">Forgot password</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn">Register</button>
                 <div class="login-register">
-                    <p>Don't have an account? <a href="register.html" class="register-link">Register</a></p>
+                    <p>Already have an account?<a href="#" class="login-link">Register</a></p>
                 </div>
             </form>
         </div>

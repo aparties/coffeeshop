@@ -165,7 +165,7 @@ header .navigation ul li a:hover, #bton-login:hover{
     justify-content: center;
     align-items: center;
     /* transform: scale(0); */
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: transform .5s ease, height .2s ease, border-color 0.5s ease;/*transicion cuando llevas una accion*/
 }
 
@@ -204,11 +204,11 @@ header .navigation ul li a:hover, #bton-login:hover{
     transform: translateX(-400px);
 } */
 
-.cover-box .form-box.register{
+/* .cover-box .form-box.register{
     position: absolute;
     transition: none;
     transform: translateX(400px);
-}
+} */
 
 .cover-box.active .form-box.register{
     transition: transform .50s ease;
