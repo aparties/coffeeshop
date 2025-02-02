@@ -31,7 +31,12 @@ header{
     text-align: center;
     padding: 40px 20px;
 }
-.banner {
+.express {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner1 {
     background: url('/img/frappe.jpg') no-repeat center center/cover;
     padding: 60px;
     color: rgba(32, 55, 230, 0.356);
@@ -39,6 +44,17 @@ header{
     font-weight: bold;
     border-radius: 10px;
     height: 500px;
+}
+.banner2 {
+    background: url('/img/banner2.jpg') no-repeat  center center/cover;
+    padding: 60px;
+    color: rgba(32, 55, 230, 0.356);
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    /* width: 900px; */
+    height: 400px;
+    /* no-repeat */
 }
 .productos {
     display: flex;
