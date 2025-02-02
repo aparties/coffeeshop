@@ -1,18 +1,15 @@
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c885397b;
+    margin: 0;
+    padding: 0;
 }
-
 header{
     position: fixed;
     top:0;
@@ -30,6 +27,60 @@ header{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
+.frappes {
+    text-align: center;
+    padding: 40px 20px;
+}
+.banner {
+    background: url('/img/frappe.jpg') no-repeat center center/cover;
+    padding: 60px;
+    color: rgba(32, 55, 230, 0.356);
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 500px;
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.producto {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 550px;
+    height: 600px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    height: 350px;
+}
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b5651d;
+}
+.btn {
+    background: #b5651d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #8c4a16;
+}
+
+
 
 header .navigation ul{
     float: right;
@@ -138,11 +189,16 @@ header .navigation ul li a:hover, #bton-login:hover{
     #check:checked ~ ul{
         left: 0;
     }
+    .banner {
+        background: url('/img/frappe.jpg') no-repeat center center/cover;
+        border-radius: 10px;
+        height: 300px;
+    }
 }
 
 .logo{
     position: relative;
-    width: 80px;
+    width: 100px;
     height: auto;
     top:0px;
     padding: 0;
@@ -181,9 +237,25 @@ header .navigation ul li a:hover, #bton-login:hover{
     }
 }
 
+
+
 .cover-box .form-box{
     width: 100%;
     padding: 40px;
+}
+
+
+
+
+.cover-box .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.cover-box.active .form-box.register{
+    transition: transform .50s ease;
+    transform: translateX(0);
 }
 
 .cover-box .icon-close{
@@ -202,112 +274,41 @@ header .navigation ul li a:hover, #bton-login:hover{
     z-index: 1;
 }
 
-.form-box h2{
-    font-size: 2em;
-    color: #0a0a0a;
-    text-align: center;
-}
-
-.input-box{
+/* Contenedor del carrusel */
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
+
 }
 
-
-.input-box label{
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #05190A;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .5s;
-}
-
-/*al colocar el clic en el input se
-desplaza -10px top arriba*/
-.input-box input:focus~label,
-.input-box input:valid~label{
-    top: -10px
-}
-
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: 1px solid #05190A;
-    border-radius: 10px;
-    outline: none;
-    font-size: 1em;
-    color: #05190A;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
-}
-
-.input-box .icon{
-    position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    color: #05190A;
-    line-height: 57PX;
-}
-
-.remenber-forgot{
-    font-size: .9em;
-    color: #05190A;
-    font-weight: 500;
-    margin: -15px 0 15px;
+/* Track de imágenes */
+.carousel-track {
     display: flex;
-    justify-content: space-between ;
+    width: 400vw; /* 4 imágenes (3 originales + 1 copia) */
+    animation: slide 12s infinite;
 }
 
-.remenber-forgot label input{
-    accent-color: #05190A;
-    margin-right: 3px;
+/* Imágenes */
+.carousel-track img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    padding-top: 1.2%;
 }
 
-.remenber-forgot a {
-    color: #05190A;
-    text-decoration: underline;
+/* Animación para hacer saltos con pausas */
+@keyframes slide {
+    0%, 25% { transform: translateX(0); } /* Mantiene la 1ra imagen */
+    30%, 50% { transform: translateX(-100vw); } /* Salta a la 2da imagen */
+    55%, 75% { transform: translateX(-200vw); } /* Salta a la 3ra imagen */
+    80%, 100% { transform: translateX(-300vw); } /* Vuelve a la 1ra imagen */
 }
 
-.remenber-forgot a:hover{
-    text-decoration: underline;
-}
-
-.btn{
-    width: 100%;
-    height: 45px;
-    background-color: #05190A;
-    border: none;
-    outline: none;
-    border-radius: 100px;
-    cursor:pointer;
-    font-size: 1em;
-    color:#fff;
-    font-weight: 500;
-}
-
-.login-register{
-    font-size: 1.1em;
-    color: #383333;
-    text-align: center;
-    font-weight: 500;
-    margin: 25px 0 10px;
-}
-
-.login-register p a{
-    color: #e1dada;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.login-register p a:hover{
-    text-decoration: underline;
+/* Pausar animación al pasar el mouse */
+.carousel:hover .carousel-track {
+    animation-play-state: paused;
 }
 
 

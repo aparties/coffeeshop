@@ -64,3 +64,15 @@ select {
   color: rgb(1, 1, 1);
   font-weight: 900;
 }
+
+.logo{
+  position: relative;
+  width: 80px;
+  height: auto;
+  top:0px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #ffffff;
+  border-radius: 10%;
+}
