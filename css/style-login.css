@@ -148,6 +148,8 @@ header .navigation ul li a:hover, #bton-login:hover{
     padding: 0;
     margin: 0;
     border: 0;
+    background-color: #ffffff;
+    border-radius: 10%;
 }
 
 .cover-box{

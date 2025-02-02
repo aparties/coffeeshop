@@ -147,13 +147,13 @@ header .navigation ul li a:hover::after {
 
 
 .logo{
-    color: rgb(52, 6, 237);
-    user-select: none;
-    font-size: 25px;
-    line-height: 50px;
-    padding: 0 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    -webkit-text-stroke: 1px brown;
-
+    position: relative;
+    width: 80px;
+    height: auto;
+    top:0px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #ffffff;
+    border-radius: 10%;
 }

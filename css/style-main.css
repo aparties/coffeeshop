@@ -198,12 +198,14 @@ header .navigation ul li a:hover, #bton-login:hover{
 
 .logo{
     position: relative;
-    width: 80px;
+    width: 100px;
     height: auto;
     top:0px;
     padding: 0;
     margin: 0;
     border: 0;
+    background-color: #ffffff;
+    border-radius: 10%;
 }
 
 .cover-box{
@@ -293,7 +295,7 @@ header .navigation ul li a:hover, #bton-login:hover{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    padding-top: 1%;
+    padding-top: 1.2%;
 }
 
 /* Animación para hacer saltos con pausas */
