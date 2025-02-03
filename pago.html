@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medios de Pago</title>
+    <link rel="stylesheet" href="css/pago.css">
+</head>
+
+<body>
+    <div class="pago">
+        <h1>Pago</h1>
+        <div class="tipo-tarjeta">
+            <h2>Medios de pago</h2>
+            <a href="pagoTarjeta.html">
+                <div class="metodo-pago">
+
+                    <div class="tipo-pago">
+                        <img src="img/pago/visa.png" alt="Visa" class="icono-tarjeta">
+                        <img src="img/pago/mastercard.png" alt="Mastercard" class="icono-tarjeta">
+                        <img src="img/pago/americanExpress.png" alt="American Express" class="icono-tarjeta">
+                    </div>
+                    <span>Tarjeta de Crédito o Débito</span>
+                </div>
+            </a>
+
+            <a href="pagoAgentes.html">
+                <div class="metodo-pago">
+                    <div class="tipo-pago">
+                        <img src="img/pago/pagoEfectivo.png" alt="PagoEfectivo" class="pago-icon">
+                    </div>
+                    <span>Banca móvil, QR (Yape, Plin) y Agentes</span>
+                </div>
+            </a>
+            <a href="pagoYape.html" class="metodo-pago">
+                <div class="tipo-pago">
+                    <img src="img/pago/yape.png" alt="Yape" class="yape-icon">
+                </div>
+                <span>Yape y otras billeteras</span>
+            </a>
+
+
+            <div class="botones">
+                <button type="button" class="btn-regresar" onclick="window.location.href='pago.html'">Regresar</button>
+                <button type="submit" class="btn-pagar">Pagar</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
