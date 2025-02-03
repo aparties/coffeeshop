@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago con Tarjeta</title>
+    <link rel="stylesheet" href="css/pago.css">
+
+</head>
+
+<body>
+    <div class="pago">
+        <h1>Pago con Tarjeta</h1>
+        <div class="formulario-tarjeta">
+            <form>
+                <div class="campo">
+                    <label>Número de Tarjeta</label>
+                    <input type="text" placeholder="1234 5678 9012 3456">
+                </div>
+                <div class="campo">
+                    <label>Nombre en la Tarjeta</label>
+                    <input type="text" placeholder="Como aparece en la tarjeta">
+                </div>
+                <div class="campo">
+                    <label>Fecha de Vencimiento</label>
+                    <input type="text" placeholder="MM/AA">
+                </div>
+                <div class="campo">
+                    <label>CVV</label>
+                    <input type="text" placeholder="123">
+                </div>
+                <div class="botones">
+                    <button type="button" class="btn-regresar"
+                        onclick="window.location.href='pago.html'">Regresar</button>
+                    <button type="submit" class="btn-pagar">Pagar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
