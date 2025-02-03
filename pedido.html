@@ -7,7 +7,9 @@
     <title>Pedidos</title>
     <link rel="icon" href="/img/logocafe.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style-login.css" type="text/css">
+    <link rel="stylesheet" href="css/style-pedido.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="codigo/app.js"></script>
 </head>
 
 <body style="background-image: url(img/cafeteriaimg.jpg)">
@@ -30,12 +32,118 @@
         </div>
     </header>
 
+    <div class="contenedor-general">
+        <div class="contenedor">
+            <ul class="ul">
+                <li class="li activo">Contacto</li>
+                <li class="li">Entrega</li>
+                <li class="li">Pago</li>
+                <li class="li">Datos de facturacion</li>
 
-    <h1>En esta pagina se muestra el pedido con sus respectivos precios y descuentos.</h1>
-    <div>
-        <img src="/img/pedido.png" alt="pedido" width="50%" height="50%">
+            </ul>
+
+            <div class="subcontenedor">
+                <div class="bloque activo">
+                        <p>Para que finalices tu compra sin problemas, necesitamos algunos datos que te tomará menos de un minuto completar.</p>
+                        <h2>Primera vez</h2>
+                        <form action="">
+                            <input type="text" id="email" placeholder="Ingresa tu email">
+                            <button>Continuar</button>
+                            <p>¿Has comprado anteriormente? Inicia sesión y obtenga mejores beneficios.</p>
+                            <button>Iniciar sesion</button>
+                        </form>
+                </div>
+
+                <div class="bloque">
+                    
+                        <h2>Como quieres tu pedido?</h2>
+                            <div class="contenedor2">
+                                <ul class="ul2">
+                                    <li class="li2 activo2">Delivery</li>
+                                    <li class="li2">Retiro</li>
+                                </ul>
+                                <div class="subcontenedor2">
+                                    <div class="bloque2 activo2">
+                                        <p>Delivery a:</p>
+                                        <input type="text" >
+                                        <button>Continuar</button>
+                                    </div>
+                                    <div class="bloque2">
+                                        <p>Retirar en:</p>
+                                        <input type="text" >
+                                        <button>Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                
+                
+                <div class="bloque">
+                    <div class="medioPago">
+                        <label for="check">Ingrese su medio su tipo de medio de pago:</label><br>
+                        <input type="checkbox" name="check" id="check">Pago con yape <br>
+                        <input type="checkbox" name="check" id="check">Pago con tarjeta CMR <br>
+                        <input type="checkbox" name="check" id="check">Pago con tarjeta Fallabela <br>
+                        <input type="checkbox" name="check" id="check">Pago con tarjeta en efectivo <br>
+                        <input type="checkbox" name="check" id="check">Pago con tarjeta Transferencia Bancaria <br>
+                    </div>
+                </div>
+
+                <div class="bloque">
+                    <div class="contenedor2">
+                        <ul class="ul2">
+                            <li class="li2 activo2">Sin datos de facturacion</li>
+                            <li class="li2">Registro con boleta</li>
+                            <li class="li2">Registro con factura</li>
+                        </ul>
+                        <div class="subcontenedor2">
+                            <div class="bloque2 activo2">
+                                <p>Confirme la operacion, sin datos de comprobantes</p>
+                                
+                            </div>
+                            <div class="bloque2">
+                                <label for="localidad">Tipo de documento de identidad</label>
+                                <select name="localidad"placeholder="Seleccione uno..">
+                                    <option>DNI</option>
+                                    <option>Carne de extranjeria</option>
+                                    <option>Pasaporte</option>
+                                </select><br>
+
+                                <label for="dato">Numero de Identificación</label>
+                                <input id="text"type="dato" name="txtEmail" value="" placeholder="Ingrese el numero"required> <br>
+
+                                <label for="email">Correo Electrónico</label>
+                                <input id="idEmail"type="email" name="txtEmail" value="" placeholder="Correo Electrónico"required><br>
+                                
+                                <button>Confirmar</button>
+                                
+                            </div>
+                            <div class="bloque2">
+                                <label for="localidad">Tipo de documento de identidad</label>
+                                <select name="localidad"placeholder="Seleccione uno..">
+                                    <option>DNI</option>
+                                    <option>Carne de extranjeria</option>
+                                    <option>Pasaporte</option>
+                                </select><br>
+
+                                <label for="dato">Numero de Identificación</label>
+                                <input id="text"type="dato" name="txtEmail" value="" placeholder="Ingrese el numero"required> <br>
+
+                                <label for="email">Correo Electrónico</label>
+                                <input id="idEmail"type="email" name="txtEmail" value="" placeholder="Correo Electrónico"required><br>
+                                
+                                <button>Confirmar</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </div>
+
     <div class="footer">
         <footer>
             <div class="footer-content">
@@ -47,7 +155,7 @@
                     <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
                 </div>
             </div>
-        </footer>
+        </footer>   
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
