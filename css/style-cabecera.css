@@ -16,6 +16,7 @@ body{
 header{
     position: fixed;
     top:0;
+    right: 0;
     left:0;
     width: 100%;
     padding: 20px 10px;
@@ -26,7 +27,7 @@ header{
     align-items: center;
     z-index: 99;
     display: block;
-    margin-inline-start: 4px;
+    margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
