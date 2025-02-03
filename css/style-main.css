@@ -205,8 +205,13 @@ header .navigation ul li a:hover, #bton-login:hover{
     #check:checked ~ ul{
         left: 0;
     }
-    .banner {
+    .banner1 {
         background: url('/img/frappe.jpg') no-repeat center center/cover;
+        border-radius: 10px;
+        height: 300px;
+    }
+    .banner2 {
+        background: url('/img/banner2.jpg') no-repeat center center/cover;
         border-radius: 10px;
         height: 300px;
     }
