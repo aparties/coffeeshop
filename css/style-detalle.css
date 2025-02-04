@@ -105,7 +105,6 @@ header{
     padding: 20px 10px;
     background-color:rgb(255,255,255,0.2);
     backdrop-filter:blur(10px);
-    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
