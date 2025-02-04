@@ -6,29 +6,25 @@
     border: 2px solid rgb(25, 22, 22);
     border-radius: 10px;
     box-shadow: 2px 2px 15px rgb(110, 77, 67);
-    width: 90%;
+    width: 100%;
     padding:  1em;
     margin: 0 auto 0 auto;
 }
 
 .contenedor .ul{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-items: center;
-    margin: 0;
 }
 
 .contenedor .ul .li{
     background-color: lightgreen;
     font-size: 1.3em;
     padding: 1em;   
-    width: 20%;
+    width: auto;
     text-align: center;
     margin:0 1em 1em 0;
     list-style-type: none;
     border-radius: 10px;
-    transition: all .5s ease;
     cursor: pointer;
 }
 
@@ -44,15 +40,16 @@
     border-radius: 10px;
     min-height: 50vh;
     background-color: rgb(229, 223, 220);
+    top:40%;
+    bottom: auto;
     position: relative;
 }
 
 .contenedor .bloque{
-    /* background-color: lightseagreen; */
     margin: 1em;
     padding: 1em;
     position: absolute;
-    top:0;
+    top:10px;
     opacity: 0;
     transition: all .5s ease;
 }
