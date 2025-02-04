@@ -26,7 +26,7 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    display: block;
+    /* display: block; */
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
