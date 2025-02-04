@@ -1,9 +1,15 @@
+
+.contenedor{
+
+    margin-top: 100px;
+}
+
 .contenedor, .contenedor2{
     border: 2px solid rgb(25, 22, 22);
     border-radius: 10px;
     box-shadow: 2px 2px 15px rgb(110, 77, 67);
     width: 90%;
-    margin: 0 5% 0 5%;
+    /* margin: 0 5% 0 5%; */
     max-width: 120em;
     padding:  1em;
 }
@@ -11,11 +17,11 @@
 .contenedor .ul, .contenedor2 .ul2{
     /* background-color: lightblue; */
     display: flex;
-    flex-flow:row nowrap;
+    flex-wrap: wrap;
     justify-content:space-around;
     align-items: center;
     margin: 0;
-    padding-inline-start: 0px;
+    /* padding-inline-start: 0px; */
 
 }
 
