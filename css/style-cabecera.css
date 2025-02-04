@@ -22,11 +22,10 @@ header{
     padding: 20px 10px;
     background-color:rgb(255,255,255,0.2);
     backdrop-filter:blur(10px);
-    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    /* display: block; */
+    display: block;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
