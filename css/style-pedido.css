@@ -1,16 +1,12 @@
-
-.contenedor{
-
+.contenedor-general{
     margin-top: 100px;
 }
 
-.contenedor, .contenedor2{
+.contenedor{
     border: 2px solid rgb(25, 22, 22);
     border-radius: 10px;
     box-shadow: 2px 2px 15px rgb(110, 77, 67);
     width: 90%;
-    /* margin: 0 5% 0 5%; */
-    max-width: 120em;
     padding:  1em;
 }
 
@@ -66,7 +62,10 @@
 .contenedor .bloque.activo, .contenedor2 .bloque2.activo2{
     opacity: 1;
     z-index:5;
-    
+}
+
+.contenedor2{
+
 }
 
 .contenedor2 .subcontenedor2{
