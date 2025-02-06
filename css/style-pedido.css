@@ -35,24 +35,21 @@
     box-shadow: 2px 2px 15px rgb(121, 158, 237);
 }
 
-.contenedor .subcontenedor{
+.contenedor .subcontenedor {
     display: flex;
-    border-radius: 10px;
-    min-height: 50vh;
-    background-color: rgb(229, 223, 220);
-    top:40%;
-    bottom: auto;
-    position: relative;
+    flex-direction: column; /* Para que los bloques se apilen en móvil */
+    min-height: auto; /* Permitir altura dinámica */
+    overflow: auto; /* Para que no se oculten los elementos */
+    position: relative; /* Evitar que los bloques sean flotantes */
 }
 
-.contenedor .bloque{
-    margin: 1em;
-    padding: 1em;
-    position: absolute;
-    top:10px;
-    opacity: 0;
-    transition: all .5s ease;
+.contenedor .bloque {
+    position: relative; /* Cambio de absoluto a relativo */
+    width: 100%; /* Asegurar que ocupen toda la pantalla en móvil */
+    opacity: 1; /* Mostrar todos los bloques por defecto */
+    visibility: visible;
 }
+
 
 .contenedor .bloque.activo, .contenedor2 .bloque2.activo2{
     opacity: 1;
@@ -103,4 +100,15 @@ button{
     padding: 5px;
     border-radius: 3px;
     box-shadow: 1px 1px 15px rgb(68, 139, 233);
+}
+@media (max-width: 768px) {
+    .contenedor .ul {
+        flex-direction: column; /* Hacer que los botones bajen */
+        align-items: center;
+    }
+
+    .contenedor .ul .li {
+        width: 100%; /* Hacer que ocupen todo el ancho */
+        text-align: center;
+    }
 }
