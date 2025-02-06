@@ -52,25 +52,6 @@
     color:white;
 }
 
-<<<<<<< HEAD
-.contenedor .subcontenedor {
-    display: flex;
-    flex-direction: column; /* Para que los bloques se apilen en móvil */
-    min-height: auto; /* Permitir altura dinámica */
-    overflow: auto; /* Para que no se oculten los elementos */
-    position: relative; /* Evitar que los bloques sean flotantes */
-}
-
-.contenedor .bloque {
-    position: relative; /* Cambio de absoluto a relativo */
-    width: 100%; /* Asegurar que ocupen toda la pantalla en móvil */
-    opacity: 1; /* Mostrar todos los bloques por defecto */
-    visibility: visible;
-}
-
-
-.contenedor .bloque.activo, .contenedor2 .bloque2.activo2{
-=======
 .subcontenedor {
     border: 3px solid rgb(148, 14, 14);
     display: flex;
@@ -99,7 +80,6 @@
 
 .activo,.bloque2.activo2{
     z-index: 4;
->>>>>>> origin/main
     opacity: 1;
 }
 
@@ -137,26 +117,6 @@
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-button{
-    border-radius: 2px solid blue;
-    background-color: rgb(198, 238, 225);
-    padding: 5px;
-    border-radius: 3px;
-    box-shadow: 1px 1px 15px rgb(68, 139, 233);
-}
-@media (max-width: 768px) {
-    .contenedor .ul {
-        flex-direction: column; /* Hacer que los botones bajen */
-        align-items: center;
-    }
-
-    .contenedor .ul .li {
-        width: 100%; /* Hacer que ocupen todo el ancho */
-        text-align: center;
-    }
-}
-=======
 .subcontenedor2{
     position: relative;
     height: 80%;
@@ -209,4 +169,3 @@ input, select {
     color: rgb(1, 1, 1);
     font-weight: 900;
 }
->>>>>>> origin/main
