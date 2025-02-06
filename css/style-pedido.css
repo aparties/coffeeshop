@@ -10,6 +10,7 @@
     height: 100vh;
     align-items:center;
     justify-content: center;
+    margin: 10px;
 }
 
 .contenedor {
@@ -17,8 +18,8 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center; /* Centra el subcontenedor verticalmente */
-    height: 80vh; /* Altura total de la ventana */
-    width: 90vh;
+    height: 720px; /* Altura total de la ventana */
+    width: 800px;
     margin: 0;
 }
 
@@ -67,12 +68,10 @@
 
 .bloque{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 1.1em;
     width: 90%;
     height: 80%;
-    margin: 0px;
+    margin: 25px;
     z-index: 0;
     /* background-color: aqua; */
     opacity: 0;
