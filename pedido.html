@@ -8,6 +8,7 @@
     <link rel="icon" href="/img/logocafe.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style-cabecera.css" type="text/css">
     <link rel="stylesheet" href="css/style-pedido.css" type="text/css">
+    <link rel="stylesheet" href="css/pago.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script defer src="codigo/app.js"></script>
 </head>
@@ -37,21 +38,23 @@
             <ul class="ul">
                 <li class="li activo">Contacto</li>
                 <li class="li">Entrega</li>
-                <li class="li"onclick="window.location.href='pago.html'">Pago</li>
-                <li class="li" >Datos de facturacion</li>
+                <li class="li">Pago</li>
+                <li class="li">Datos de facturacion</li>
 
             </ul>
 
             <div class="subcontenedor">
                 <div class="bloque activo">
-                        <p>Para que finalices tu compra sin problemas, necesitamos algunos datos que te tomará menos de un minuto completar.</p>
-                        <h2>Primera vez</h2>
-                        <form action="">
+                    <div class="contenidoEsp apk">
+                        <p class="apk">Para que finalices tu compra sin problemas, necesitamos algunos datos que te tomará menos de un minuto completar.</p>
+                        <h2 class="apk">Primera vez</h2><br>
+                        <form class="formulario">
                             <input type="text" id="email" placeholder="Ingresa tu email">
-                            <button>Continuar</button>
-                            <p>¿Has comprado anteriormente? Inicia sesión y obtenga mejores beneficios.</p>
-                            <button>Iniciar sesion</button>
+                            <input type="submit" class="btn" value="Enviar"><br><br>
+                            <p>¿Has comprado anteriormente? Inicia sesión y obtenga mejores beneficios.</p><br>
+                            <input type="submit" class="btn" value="Enviar">
                         </form>
+                    </div>    
                 </div>
 
                 <div class="bloque">
@@ -64,14 +67,18 @@
                                 </ul>
                                 <div class="subcontenedor2">
                                     <div class="bloque2 activo2">
-                                        <p>Delivery a:</p>
-                                        <input type="text" >
-                                        <button>Continuar</button>
+                                        <form class="formulario">
+                                            <p>Delivery a la dirección de:</p><br>
+                                            <input type="text"><br>
+                                            <input type="submit" class="btn" value="Enviar">
+                                        </form>
                                     </div>
                                     <div class="bloque2">
-                                        <p>Retirar en:</p>
-                                        <input type="text" >
-                                        <button>Continuar</button>
+                                        <form class="formulario">
+                                            <p>Retirar en la siguiente dirección:</p><br>
+                                            <input type="text" ><br>
+                                            <input type="submit" class="btn" value="Enviar">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -79,13 +86,41 @@
                 
                 
                 <div class="bloque">
-                    <div class="medioPago">
-                        <label for="check">Ingrese su medio su tipo de medio de pago:</label><br>
-                        <input type="checkbox" name="check" id="check">Pago con yape <br>
-                        <input type="checkbox" name="check" id="check">Pago con tarjeta CMR <br>
-                        <input type="checkbox" name="check" id="check">Pago con tarjeta Fallabela <br>
-                        <input type="checkbox" name="check" id="check">Pago con tarjeta en efectivo <br>
-                        <input type="checkbox" name="check" id="check">Pago con tarjeta Transferencia Bancaria <br>
+                    <div class="pago">
+                        <h1>Pago</h1>
+                        <div class="tipo-tarjeta">
+                            <h2>Medios de pago</h2>
+                            <a href="pagoTarjeta.html">
+                                <div class="metodo-pago">
+                                    <div class="tipo-pago">
+                                        <img src="img/pago/visa.png" alt="Visa" class="icono-tarjeta">
+                                        <img src="img/pago/mastercard.png" alt="Mastercard" class="icono-tarjeta">
+                                        <img src="img/pago/americanExpress.png" alt="American Express" class="icono-tarjeta">
+                                    </div>
+                                    <span>Tarjeta de Crédito o Débito</span>
+                                </div>
+                            </a>
+                
+                            <a href="pagoAgentes.html">
+                                <div class="metodo-pago">
+                                    <div class="tipo-pago">
+                                        <img src="img/pago/pagoEfectivo.png" alt="PagoEfectivo" class="pago-icon">
+                                    </div>
+                                    <span>Banca móvil, QR (Yape, Plin) y Agentes</span>
+                                </div>
+                            </a>
+                            <a href="pagoYape.html" class="metodo-pago">
+                                <div class="tipo-pago">
+                                    <img src="img/pago/yape.png" alt="Yape" class="yape-icon">
+                                </div>
+                                <span>Yape y otras billeteras</span>
+                            </a>
+                            <div class="botones">
+                                <button type="submit" class="btn-pagar">Pagar</button>
+                                <button type="button" class="btn-regresar" onclick="window.location.href='main.html'">Regresar</button>
+                            </div>
+                
+                        </div>
                     </div>
                 </div>
 
@@ -98,41 +133,45 @@
                         </ul>
                         <div class="subcontenedor2">
                             <div class="bloque2 activo2">
-                                <p>Confirme la operacion, sin datos de comprobantes</p>
-                                
+                                <form action="" class="formulario">
+                                    <p>Confirme la operacion, sin datos de comprobantes<p><br>
+                                    <input type="submit" class="btn" value="Enviar">
+                                </form>
                             </div>
                             <div class="bloque2">
-                                <label for="localidad">Tipo de documento de identidad</label>
-                                <select name="localidad"placeholder="Seleccione uno..">
-                                    <option>DNI</option>
-                                    <option>Carne de extranjeria</option>
-                                    <option>Pasaporte</option>
-                                </select><br>
+                                <form class="formulario">
+                                    <label for="dni">Tipo de documento</label>
+                                    <select name="dni"placeholder="Seleccione uno..">
+                                        <option>DNI</option>
+                                        <option>Carne de extranjeria</option>
+                                        <option>Pasaporte</option>
+                                    </select><br>
 
-                                <label for="dato">Numero de Identificación</label>
-                                <input id="text"type="dato" name="txtEmail" value="" placeholder="Ingrese el numero"required> <br>
+                                    <label for="dato">Numero de Identificación</label>
+                                    <input id="text"type="dato" name="txtIndentificacion" value="" placeholder="Ingrese el numero"required> <br>
 
-                                <label for="email">Correo Electrónico</label>
-                                <input id="idEmail"type="email" name="txtEmail" value="" placeholder="Correo Electrónico"required><br>
-                                
-                                <button>Confirmar</button>
-                                
+                                    <label for="email">Correo Electrónico</label>
+                                    <input id="idEmail"type="email" name="txtEmail" value="" placeholder="Correo Electrónico"required><br>
+                                    
+                                    <input type="submit" class="btn" value="Enviar">
+                                </form>
                             </div>
                             <div class="bloque2">
-                                <label for="localidad">Tipo de documento de identidad</label>
-                                <select name="localidad"placeholder="Seleccione uno..">
-                                    <option>DNI</option>
-                                    <option>Carne de extranjeria</option>
-                                    <option>Pasaporte</option>
-                                </select><br>
+                                <form class="formulario">
+                                    <label for="dato">Direccion</label>
+                                    <input id="text"type="dato" name="txtdato" value="" placeholder="Ingrese su direccion"required> <br>
 
-                                <label for="dato">Numero de Identificación</label>
-                                <input id="text"type="dato" name="txtEmail" value="" placeholder="Ingrese el numero"required> <br>
+                                    <label for="ruc">Numero de RUC </label>
+                                    <input id="text"type="ruc" name="txtRuc" value="" placeholder="Ingrese su numero"required> <br>
 
-                                <label for="email">Correo Electrónico</label>
-                                <input id="idEmail"type="email" name="txtEmail" value="" placeholder="Correo Electrónico"required><br>
-                                
-                                <button>Confirmar</button>
+                                    <label for="email">Correo Electrónico</label>
+                                    <input id="idEmail"type="email" name="txtEmail" value="" placeholder="Correo Electrónico"required><br>
+
+                                    <label for="razon">Razon Social</label>
+                                    <input id="text"type="razon" name="txtRazon" value="" placeholder="Ingrese su razon social"required> <br>
+                                    
+                                    <input type="submit" class="btn" value="Enviar">
+                                </form>
                             </div>
 
                         </div>
