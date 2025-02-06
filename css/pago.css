@@ -235,3 +235,7 @@ span {
         height: 150px;
     }
 }
+
+a{
+    text-decoration: none;
+}
