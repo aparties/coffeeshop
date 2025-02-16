@@ -8,15 +8,16 @@ body {
 
 .ubicaciones {
     display: block;
-    margin: 5px auto 5px auto;
+    margin: 5px 10% 5px 10%;
     /* justify-content: space-between; */
     align-items: center;
+
     width: 100%;
     height: auto;
 }
 
 .caja {
-    width: 100%; 
+    width: 80%; 
     height: auto;
     background-color: #fff;
     border-radius: 10px;
@@ -24,12 +25,12 @@ body {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px; 
 }
 
 .caja img {
-    width: 400px; 
+    width: 40%; 
     height: auto; 
     max-height: 50%; 
     object-fit: cover; 
@@ -46,7 +47,6 @@ body {
 
 .info h2{
     font-style: oblique;
-    font-size: 1.8em;
     background-color: #cadcea;
     padding: 8px;
     -webkit-text-stroke: 1px #b5e8f4;

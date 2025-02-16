@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 .grid_principal{
+    margin: 100px 3px 70px 3px;
     display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(4,auto);
     background-color: white;
-    border-style: solid;
     gap: 10px;
     align-items: center;
 }
@@ -56,7 +58,6 @@
 .grid_imagen2{
     grid-column: 1/2;
     grid-row: 3;
-    background-color:rgb(182, 229, 179);
 }
 
 .grid_vision{
@@ -65,6 +66,14 @@
     background-color:rgb(209, 58, 71);
 }
 
+@media(max-width:550px){
+    .grid_principal{
+        display: block;
+        width: 100%;
+        margin: 100px 3px 70px 3px;
+    }
+
+}
 .formato{
     font-size: 1.2em;
     padding: 30px;

@@ -22,7 +22,7 @@
     margin: 0;
 }
 
-.ul {
+#ul {
     border: 1px solid rgb(148, 14, 14);
     display: flex;
     flex-direction: column;
@@ -31,7 +31,6 @@
     background-color: #bfb0a3;
     padding: 0;
     margin: 10px;
-    list-style-type: none; /* Elimina las viñetas */
 }
 
 .li {
@@ -84,7 +83,49 @@
     transition: opacity 0.3s ease-in-out;
 }
 
+<<<<<<< HEAD
 .bloque2 {
+=======
+.contenidoEsp{
+    text-align: center;
+    margin: 10%;
+}
+
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /* background-color: rgb(77, 255, 0); */
+    padding: 0;
+    height: 80%;
+}
+
+#ul2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: space-around;
+}
+
+.li2{
+    background-color: rgb(242, 233, 223);
+    border-radius: 10px;
+    padding: 2%;
+    width: 100px;
+    text-align: center;
+    margin:0 2px 5px 0;
+    cursor: pointer;
+}
+
+.subcontenedor2{
+    position: relative;
+    height: 80%;
+
+}
+
+.bloque2{
+>>>>>>> 6770529ac836ea560b4ebe058609410fc167f7e5
     position: absolute;
     z-index: 0;
     top: 50%;
@@ -179,6 +220,7 @@ input, select {
     font-weight: 900;
 }
 
+<<<<<<< HEAD
 /* Estilos para .acceso */
 .acceso {
     display: flex;
@@ -237,3 +279,47 @@ input, select {
         padding-bottom: 200px;
     }
 }
+=======
+@media(max-width:550px){
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Centra el subcontenedor verticalmente */
+        height: 70%; /* Altura total de la ventana */
+        width: 80%;
+        margin: 0;
+    }
+
+    #ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 0.8em;
+        justify-content: center;
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .li{
+        margin: 1px;
+        font-size: 14px
+    }
+
+    .subcontenedor{
+        display: flex;
+        font-size: 0.9em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bloque{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        top:40%;
+    }
+
+}
+>>>>>>> 6770529ac836ea560b4ebe058609410fc167f7e5
