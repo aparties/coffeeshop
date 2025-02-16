@@ -1,14 +1,14 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.contenedor-general{
+.contenedor-general {
     display: flex;
     width: 100%;
     height: 100vh;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -16,8 +16,8 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    align-items: center; /* Centra el subcontenedor verticalmente */
-    height: 80vh; /* Altura total de la ventana */
+    align-items: center;
+    height: 80vh;
     width: 90vh;
     margin: 0;
 }
@@ -37,7 +37,7 @@
 .li {
     background-color: rgb(12, 243, 31);
     font-size: 1.5em;
-    display: flex; /* Necesario para que align-items y justify-content funcionen */
+    display: flex;
     align-items: center; /* Centra el contenido verticalmente */
     justify-content: center; /* Centra el contenido horizontalmente */
     color: white;
@@ -47,9 +47,9 @@
     cursor: pointer;
 }
 
-.li.activo{
+.li.activo {
     background-color: blue;
-    color:white;
+    color: white;
 }
 
 .subcontenedor {
@@ -57,7 +57,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 800px; /* Ancho máximo para un mejor diseño */
+    max-width: 800px;
     background-color: #bfb0a3;
     padding: 1px;
     border-radius: 10px;
@@ -65,7 +65,7 @@
     height: 80%;
 }
 
-.bloque{
+.bloque {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -74,56 +74,17 @@
     height: 80%;
     margin: 0px;
     z-index: 0;
-    /* background-color: aqua; */
     opacity: 0;
+    transition: opacity 0.3s ease-in-out, z-index 0s linear 0.3s;
 }
 
-.activo,.bloque2.activo2{
-    z-index: 4;
+.bloque.activo {
+    z-index: 10;
     opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.contenidoEsp{
-    text-align: center;
-    margin: 10%;
-}
-
-.contenedor2{
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    /* background-color: rgb(77, 255, 0); */
-    padding: 0;
-    height: 80%;
-}
-
-.ul2{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-    align-items: center; /* Centra el contenido verticalmente */
-    justify-content: space-around;
-
-}
-
-.li2{
-    background-color: rgb(242, 233, 223);
-    border-radius: 10px;
-    padding: 2%;
-    width: 33%;
-    text-align: center;
-    margin:0 1px 5px 0;
-    list-style-type: none;
-    cursor: pointer;
-}
-
-.subcontenedor2{
-    position: relative;
-    height: 80%;
-
-}
-
-.bloque2{
+.bloque2 {
     position: absolute;
     z-index: 0;
     top: 50%;
@@ -131,10 +92,54 @@
     transform: translate(-50%, -50%);
     width: 90%;
     height: 100%;
-    opacity:0;
-} 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, z-index 0s linear 0.3s;
+}
 
-.formulario{
+.bloque2.activo2 {
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.contenidoEsp {
+    text-align: center;
+    margin: 10%;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0;
+    height: 80%;
+}
+
+.ul2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.li2 {
+    background-color: rgb(242, 233, 223);
+    border-radius: 10px;
+    padding: 2%;
+    width: 33%;
+    text-align: center;
+    margin: 0 1px 5px 0;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.subcontenedor2 {
+    position: relative;
+    height: 80%;
+}
+
+.formulario {
     background-color: rgb(225, 213, 213);
     padding: 20px;
     border-radius: 10px;
@@ -143,7 +148,7 @@
     width: 100%;
 }
 
-label, h2{
+label, h2 {
     margin-top: 10px;
     margin-right: 10px;
 }
@@ -162,10 +167,73 @@ input, select {
     color: white;
     background-color: #6e452a;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
 }
 
 .btn:hover {
     background-color: #b2cb8f;
     color: rgb(1, 1, 1);
     font-weight: 900;
+}
+
+/* Estilos para .acceso */
+.acceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        min-height: 80vh; /* Permite que crezca si hay contenido */
+    }
+
+    .subcontenedor {
+        width: 95%;
+        height: auto;
+    }
+
+    .ul {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .li {
+        font-size: 1.2em;
+        margin: 5px;
+    }
+
+    .acceso {
+        display: flex !important;
+        flex-direction: column !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        padding-bottom: 200px;
+    }
+
+    .btn {
+        display: block !important; /* Asegura que los botones sean visibles */
+        opacity: 1 !important;
+        z-index: 10 !important;
+        margin: 10px auto; /* Centra y da espacio */
+        width: 50%; /* Ajusta el tamaño si es necesario */
+        padding: 10px;
+    }
+
+    .acceso {
+        position: relative;
+        z-index: 1000 !important;
+        padding-bottom: 200px;
+    }
 }
