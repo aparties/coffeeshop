@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="/css/carrito.css">
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+        <a href="main.html" class="btn-volver">⬅ Volver a la Tienda</a>
+    </header>
+
+    <main>
+        <table id="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los productos del carrito se generarán dinámicamente con JS -->
+            </tbody>
+        </table>
+        <p id="total-carrito">Total: S/ 0.00</p>
+        <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+    </main>
+
+    <script src="/script/carrito.js"></script>
+</body>
+</html>

@@ -83,9 +83,6 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-<<<<<<< HEAD
-.bloque2 {
-=======
 .contenidoEsp{
     text-align: center;
     margin: 10%;
@@ -125,7 +122,6 @@
 }
 
 .bloque2{
->>>>>>> 6770529ac836ea560b4ebe058609410fc167f7e5
     position: absolute;
     z-index: 0;
     top: 50%;
@@ -220,66 +216,6 @@ input, select {
     font-weight: 900;
 }
 
-<<<<<<< HEAD
-/* Estilos para .acceso */
-.acceso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-}
-
-/* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
-    .contenedor {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        min-height: 80vh; /* Permite que crezca si hay contenido */
-    }
-
-    .subcontenedor {
-        width: 95%;
-        height: auto;
-    }
-
-    .ul {
-        max-width: 100%;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .li {
-        font-size: 1.2em;
-        margin: 5px;
-    }
-
-    .acceso {
-        display: flex !important;
-        flex-direction: column !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        padding-bottom: 200px;
-    }
-
-    .btn {
-        display: block !important; /* Asegura que los botones sean visibles */
-        opacity: 1 !important;
-        z-index: 10 !important;
-        margin: 10px auto; /* Centra y da espacio */
-        width: 50%; /* Ajusta el tamaño si es necesario */
-        padding: 10px;
-    }
-
-    .acceso {
-        position: relative;
-        z-index: 1000 !important;
-        padding-bottom: 200px;
-    }
-}
-=======
 @media(max-width:550px){
     .contenedor {
         display: flex;
@@ -322,4 +258,3 @@ input, select {
     }
 
 }
->>>>>>> 6770529ac836ea560b4ebe058609410fc167f7e5
