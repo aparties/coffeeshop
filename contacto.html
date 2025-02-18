@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="icon" href="/img/logocafe.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style-cabecera.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style-contacto.css" type="text/css">
+    <!-- contacto js -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="codigo/contacto.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body style="background-color: #e9cdbb">
@@ -31,33 +35,34 @@
     </header>
 
     <div class="cuerpo">
-    <div class="div">        
-        
-            <h1 style= color:brown><center>Estamos listos para atenderte!!</center></h1>
+        <div class="div">
+            <h1 style="color:brown">
+                <center>Estamos listos para atenderte!!</center>
+            </h1>
             <p>Para más información, contáctanos al correo: <a href="mailto:info@coffeeshop.com">info@coffeeshop.com</a></p>
             <p>Teléfono: +51 958 345 312</p>
             <p>Dirección: Calle Cuzco 271, Lince-Lima</p>
- 
-            <form >
+
+            <form id="contact-form">
                 <div class="input-group">
                     <label for="asunto">Asunto</label>
-                    <select name="Asunto">
+                    <select name="asunto" id="asunto">
                         <option>Consulta</option>
                         <option>Sugerencia</option>
                         <option>Comentario</option>
                     </select>
 
                     <label for="nombre">Nombres</label>
-                    <input id="idNombre"type="text" name="txtNombre" value="" placeholder="Nombre"required>
-                    
-                   <label for="apellidos">Apellidos</label>
-                   <input id="idApellido"type="text" name="txtApellidos" value="" placeholder="Apellidos"required>
-                        
+                    <input id="idNombre" type="text" name="nombres" value="" placeholder="Nombre" required>
+
+                    <label for="apellidos">Apellidos</label>
+                    <input id="idApellido" type="text" name="apellidos" value="" placeholder="Apellidos" required>
+
                     <label for="telefono">Telefono de contacto</label>
-                    <input id="idNumber"type="number" name="txtTelefono" value="" placeholder="Telefono de Contacto"required>
-                        
+                    <input id="idNumber" type="number" name="telefono" value="" placeholder="Telefono de Contacto" required>
+
                     <label for="localidad">Localidad</label>
-                    <select name="localidad">
+                    <select name="localidad" id="localidad">
                         <option>Jiron Caraballa 552, Lima</option>
                         <option>Calle Pampa De Castillo 365 Cusco</option>
                         <option>Avenida Andres Martinez 352, Arequipa</option>
@@ -67,24 +72,21 @@
                         <option>Jiron Ayacucho 202, Piura</option>
                         <option></option>
                     </select>
-                    
+
                     <label for="email">Correo Electrónico</label>
-                    <input id="idEmail"type="email" name="txtEmail" value="" placeholder="Correo Electrónico"required>
-                    
+                    <input id="idEmail" type="email" name="correo" value="" placeholder="Correo Electrónico" required>
+
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="idMensaje" name="txtMensaje" rows="4" placeholder="Mensaje" required></textarea>
+                    <textarea id="idMensaje" name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
                 </div>
 
-                    <input class="btn" type="submit" name="btnEnviar" value="Enviar">
-            
-                
+                <input class="btn" type="submit" name="btnEnviar" value="Enviar">
             </form>
+        </div>
 
-    </div>
-
-    <div class="divImg">
-        <img src="img/cofeShop.jpg">
-    </div>
+        <div class="divImg">
+            <img src="img/cofeShop.jpg">
+        </div>
     </div>
     <div class="footer">
         <footer>
@@ -100,8 +102,6 @@
         </footer>
     </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    </body>
 
 </html>
