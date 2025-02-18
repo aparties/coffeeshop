@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="forgot.js" defer></script>
+    <title>Olvidé mi contraseña</title>
+    <link rel="icon" href="/img/logocafe.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style-cabecera.css" type="text/css">
+    <link rel="stylesheet" href="css/pago.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="codigo/forgot.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            height:60%;
+            width: 100%;
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .message {
+            margin-top: 15px;
+            font-size: 19px;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body style="background-image: url(img/cafeteriaimg.jpg)">
+    <header>
+        <div class="navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="check-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="main.html"><img src="img/logocafe.png" class="logo"></img></a>
+            <ul>
+                <li><a href="/main.html">Home</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="/ubicacion.html">Ubicación</a></li>
+                <li><a href="/pedido.html">Pedidos</a></li>
+                <li><a id="bton-login" href="/login.html">Login</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Olvidé mi contraseña</h2>
+        <form id="resetForm">
+            <label for="email">Introduce tu correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            <div>
+                <button type="submit" id="resetButton">Restablecer contraseña</button>
+                <button onclick="location='login.html'">Regresar</button>
+            </div>
+            <div class="message" id="message"></div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Coffee Shop All rights reserved</p>
+                <div class="social-icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </footer>   
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
