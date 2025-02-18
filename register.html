@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style-register.css" type="text/css">
     <link rel="stylesheet" href="css/style-cabecera.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="codigo/register.js" defer></script>
+    
 </head>
 <body style="background-image: url(img/cafeteriaimg.jpg)">
     <header>
@@ -30,33 +32,32 @@
 
     <div class="cover-box">
         <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
-        
 
 <!--registration-->
         <div class="form-box register">
             <h2>Register</h2>
-            <form action="#">
+            <form action="#" id="registroForm">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <input type="text" required>
+                    <input type="text" id="username" required>
                     <label >Username</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
+                    <input type="email" id="email" required>
                     <label >Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
+                    <input type="password" id="password" autocomplete="off" required>
                     <label >Password</label>
                 </div>
                 
                 <div class="remenber-forgot">
                     <label for=""><input type="checkbox">Agree to terms & conditions</label>
-                    <a href="#">Forgot password</a>
+                    <a href="forgot.html">Forgot password</a>
                 </div>
-                <button type="submit" class="btn">Register</button>
+                <button type="submit" class="btn" onclick="registrarCliente()">Register</button>
                 <div class="login-register">
                     <p>Already have an account?<a href="login.html" class="login-link">Login now!</a></p>
                 </div>
