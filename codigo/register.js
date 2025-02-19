@@ -4,7 +4,7 @@ function registrarCliente(){
     let password = document.getElementById('password').value;
 
     if(nombre=="" || email =="" || password==""){
-        alert('Ingrese sus datos correctos')
+        alert('Ingrese todos campos completos')
         return;
     }
 
