@@ -76,8 +76,8 @@ header .navigation ul li a:hover::after {
     border: 2px solid #695959;
     border-radius: 6px;
     cursor: pointer;
-    padding: 10px;
-    font-size: 1.2em;
+    padding: 5px;
+    font-size: 1.1em;
     font-weight: 700;
     margin-left: 25px;
     -webkit-text-stroke: 1px #05f140;
@@ -102,6 +102,21 @@ header .navigation ul li a:hover::after {
 
 #check{
     display:none;
+}
+
+#userEmailHeader{
+    font-size: 12px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+#logoutButton{
+    margin-left:5px ;
+    padding: 5px;
+    background-color: #66b2ff;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 @media(max-width:858px){
