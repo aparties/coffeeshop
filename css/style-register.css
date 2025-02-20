@@ -13,144 +13,6 @@ body{
     background-position: center;
 }
 
-header{
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    padding: 20px 10px;
-    background-color:rgb(255,255,255,0.2);
-    backdrop-filter:blur(10px);
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-    display: block;
-    margin-inline-start: 4px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-header .navigation ul{
-    float: right;
-    margin-right: 10px;
-}
-
-header .navigation ul li{
-    display: inline-block;
-    line-height: 50px;
-    margin: 0 5px;
-}
-
-header .navigation ul li a{
-    position: relative;
-    font-size: 1.1em;
-    font-family: sans-serif;
-    -webkit-text-stroke: 1px #05190A;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 800;
-    margin-left: 20px;
-    padding: 3px 7px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-header .navigation ul li a::after {
-    content: " ";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 8px;
-    border-radius: 4px;
-    transform: scaleX(0);
-    transition: transform .5s, background-color .5s;
-    box-shadow: 0 0 10px rgba(206, 221, 227, 0.8);
-}
-
-header .navigation ul li a:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-    background: linear-gradient(to right, #66b2ff, #e0f7ff);
-}
-
-#bton-login{
-    background: transparent;
-    border: 2px solid #fff;
-    border-radius: 6px;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin-left: 25px;
-    -webkit-text-stroke: 1px #05f140;
-}
-
-header .navigation ul li a:hover, #bton-login:hover{
-    background-color: #05190A;
-    transition: .5s;
-}
-
-.check-btn{
-    font-size: 25px;
-    color: white;
-    float: left;
-    line-height: 50px;
-    margin-right: 10px;
-    cursor: pointer;
-    display: none;
-    -webkit-text-stroke: 1px #05f140;
-}
-
-#check{
-    display:none;
-}
-
-@media(max-width:1072px){
-    .check-btn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width:50%;
-        height: 65vh;
-        background: #2c5038;
-        top: 100px;
-        left: -100%;
-        text-align: left;
-        transition: all .5s;
-        border: 2px solid #c9c8c8;
-        border-radius: 6px;
-        box-shadow: 0 0 30px rgba(0, 0, 0 , 0.5);
-    }
-
-    header .navigation ul li{
-        display: block;
-        margin: 40px 0;
-        line-height: 30px;
-    }
-
-    header .navigation ul li a{
-        font-size: 1.2em;
-    }
-
-    #check:checked ~ ul{
-        left: 0;
-    }
-}
-
-.logo{
-    position: relative;
-    width: 80px;
-    height: auto;
-    top:0px;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    background-color: #ffffff;
-    border-radius: 10%;
-}
-
 .cover-box{
     position: relative;
     width: 400px;
@@ -299,49 +161,12 @@ desplaza -10px top arriba*/
 }
 
 .login-register p a{
-    color: #9a9a9a;
+    color: #f0f0f0;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1.1em;
 }
 
 .login-register p a:hover{
     text-decoration: underline;
-}
-
-
-/* footer */
-.footer{
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    color: #6c582ee1;
-    padding: 10px 0;
-    text-align: center;
-    background-color: rgba(243, 237, 237, 0.879);
-    backdrop-filter: blur(10px);
-}
-
-.footer-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 10px;
-}
-
-.social-icons a{
-    color: #6c582ee1;
-    font-size: 1.5em;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.footer-content p{
-    font-size: 0.9em;
-    margin-bottom: 10px;
-}
-
-.social-icons a:hover{
-    color: #05190A;
 }

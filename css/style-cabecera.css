@@ -22,6 +22,11 @@ header{
     padding-inline-start: 10px;
 }
 
+header .navigation #menu-container{
+    float: right;
+    margin-right: 10px;
+}
+
 header .navigation ul li{
     display: inline-block;
     line-height: 50px;
@@ -113,10 +118,6 @@ header .navigation ul li a:hover::after {
     border-radius: 10px;
 }
 
-header .navigation #menu-container{
-    float: right;
-    margin-right: 10px;
-}
 
 @media(max-width:900px){
     .check-btn{
