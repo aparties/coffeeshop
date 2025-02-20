@@ -89,6 +89,8 @@ span {
     font-size: 1em;
 }
 
+/*botones generales para poder pagar y regresar*/ 
+
 .btn-pagar, .btn-regresar{
     background-color: #fabf85;
     border: none;
