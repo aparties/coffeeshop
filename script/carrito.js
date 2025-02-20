@@ -60,9 +60,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById("finalizar-compra").addEventListener("click", function () {
-        alert("Compra finalizada. ¡Gracias por tu compra!");
-        localStorage.removeItem("carrito");
-        window.location.href = "pedido.html";
+        if( Object.keys(carrito).find(nombreProducto => carrito[nombreProducto] > 1 )) {
+            alert("Compra finalizada. ¡Gracias por tu compra!");
+            localStorage.removeItem("carrito");
+            window.location.href = "pedido.html";
+        }else{
+            alert("Para finalizar con la compra agrega un producto:");
+            window.location.href = "agregar.html";   
+        }
+
+        
     });
 
     actualizarCarrito();
