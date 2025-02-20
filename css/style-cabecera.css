@@ -126,7 +126,7 @@ header .navigation ul li a:hover::after {
     #menu-container{
         position: fixed;
         width:40%;
-        height: 60vh;
+        height: auto;
         min-width:198px ;
         background: #2c5038;
         top: 100px;
