@@ -234,3 +234,12 @@ input, select {
     }
 
 }
+
+.invalid{
+    border: red;
+    box-shadow: 0 0 10px red;
+}
+.error{
+    color: rgb(255, 0, 0);
+    display: block;
+}

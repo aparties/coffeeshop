@@ -29,20 +29,47 @@ function recorrerMenus(li, bloque, nameClass){
 recorrerMenus(li, bloque, "activo")
 recorrerMenus(li2, bloque2, "activo2")
 
+//Funcion para ir a la ventana especifica
+const irVentanaEspecifica = (numero) =>{ 
+    eliminarClase(li, bloque,'activo');
+    li[numero].classList.add("activo");
+    bloque[numero].classList.add("activo");
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const loggedIn = localStorage.getItem('loggedIn') === 'true';
     if (loggedIn) {
-        eliminarClase(li, bloque,'activo');
-        li[1].classList.add("activo");
-        bloque[1].classList.add("activo");
+        irVentanaEspecifica(1);
     }
 })
 
 
-
+//Funcion para registrar al cliente para que compre
 function registrarEmail(){
     const email = document.getElementById('tem-email').value;
     localStorage.setItem('temporalEmail', email);
     window.location.href='register.html'
 }
+
+const botonDireccion = document.getElementById('boton-direccion-del')
+const direccionDel = document.querySelector('.direccion-envio-del')
+
+function validateEmptyField(message,e){
+        const field= e.target;
+        const fielValue = e.target.value
+        if(fielValue.trim().length===0){
+            field.classList.add('invalid')
+            field.nextElementSibling.classList.add('error')//elemento hermano
+            field.nextElementSibling.innerText = message;
+            focus(field)
+        }else{
+            field.classList.remove('invalid')
+            field.nextElementSibling.classList.add('error');
+            field.nextElementSibling.innerText ="";
+        }
+}
+
+botonDireccion.addEventListener('click' , () => {
+    direccionDel.addEventListener('blur', (e) => validateEmptyField('Ingresa una direccion correcta' , e))
+})
+    
