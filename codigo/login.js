@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const botonIniciar = document.getElementById('boton');
-const navegador = document.getElementById('lista-cabecera');
 let email = document.getElementById('email');
 let password = document.getElementById('password');
 
