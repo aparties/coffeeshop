@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-.contenedor {
+.contenedor-general .contenedor {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -64,7 +64,7 @@
     height: 80%;
 }
 
-.bloque {
+.subcontenedor .bloque {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -149,30 +149,6 @@
     flex-direction: column;
     max-width: 100%;
     padding: 0;
-    height: 80%;
-}
-
-.ul2 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.li2 {
-    background-color: rgb(242, 233, 223);
-    border-radius: 10px;
-    padding: 2%;
-    width: 33%;
-    text-align: center;
-    margin: 0 1px 5px 0;
-    list-style-type: none;
-    cursor: pointer;
-}
-
-.subcontenedor2 {
-    position: relative;
     height: 80%;
 }
 
