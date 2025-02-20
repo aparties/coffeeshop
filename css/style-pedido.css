@@ -193,7 +193,7 @@ input, select {
 }
 
 @media(max-width:550px){
-    .contenedor {
+    .contenedor-general .contenedor {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -225,7 +225,7 @@ input, select {
         padding: 0;
     }
 
-    .bloque{
+    .subcontenedor .bloque{
         display: flex;
         flex-direction: column;
         margin: 0;
