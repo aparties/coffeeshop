@@ -12,14 +12,14 @@ h1 {
 h2 {
     font-size: 1.5em;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Estilos para la página principal */
 .tipo-tarjeta {
     background-color: white;
     border-radius: 12px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -89,32 +89,21 @@ span {
     font-size: 1em;
 }
 
-.btn-pagar {
+.btn-pagar, .btn-regresar{
     background-color: #fabf85;
     border: none;
-    padding: 12px 24px;
+    padding: 10px 24px;
     border-radius: 4px;
     color: white;
     cursor: pointer;
     font-size: 1em;
     width: 100%;
     transition: background-color 0.3s;
-}
-.btn-regresar {
-    background-color: #fabf85;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    font-size: 1em;
-    width: 100%;
-    transition: background-color 0.3s;
-    margin: 5px 0;
+    margin: 1px;
 }
 
-.btn-pagar:hover {
-    background-color: #e9ae74;
+.btn-pagar:hover, .btn-regresar:hover{
+    background-color: #673605;
 }
 
 /* Estilos para pago en efectivo */
