@@ -14,7 +14,6 @@ header{
     padding: 20px 10px;
     background-color:rgb(255,255,255,0.2);
     backdrop-filter:blur(10px);
-    justify-content: space-between;
     align-items: center;
     z-index: 99;
     display: block;
@@ -114,40 +113,45 @@ header .navigation ul li a:hover::after {
     margin-left:5px ;
     padding: 5px;
     background-color: #66b2ff;
-    border: 1px solid white;
+    border: 1px solid white;    
     cursor: pointer;
     border-radius: 10px;
+}
+
+#menu-container{
+    float: right;
+    margin-right: 10px;
 }
 
 @media(max-width:858px){
     .check-btn{
         display: block;
     }
-    ul{
+    #menu-container{
         position: fixed;
-        width:50%;
+        width:40%;
         height: 65vh;
         background: #2c5038;
         top: 100px;
         left: -100%;
-        text-align: left;
+        text-align: center;
         transition: all .5s;
         border: 2px solid #c9c8c8;
         border-radius: 6px;
         box-shadow: 0 0 30px rgba(0, 0, 0 , 0.5);
     }
 
-    header .navigation ul li{
+    header .navigation #menu-container li{
         display: block;
         margin: 40px 0;
         line-height: 30px;
     }
 
-    header .navigation ul li a{
+    header .navigation #menu-container li a{
         font-size: 1.2em;
     }
 
-    #check:checked ~ ul{
+    #check:checked ~ #menu-container{
         left: 0;
     }
 }
