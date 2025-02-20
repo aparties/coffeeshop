@@ -19,12 +19,7 @@ header{
     display: block;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-header .navigation ul{
-    float: right;
-    margin-right: 10px;
+    padding-inline-start: 10px;
 }
 
 header .navigation ul li{
@@ -41,7 +36,7 @@ header .navigation ul li a{
     color: #dac8c8;
     text-decoration: none;
     font-weight: 800;
-    margin-left: 20px;
+    margin-left: 5px;
     padding: 3px 7px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -123,14 +118,15 @@ header .navigation ul li a:hover::after {
     margin-right: 10px;
 }
 
-@media(max-width:858px){
+@media(max-width:900px){
     .check-btn{
         display: block;
     }
     #menu-container{
         position: fixed;
         width:40%;
-        height: 65vh;
+        height: 60vh;
+        min-width:198px ;
         background: #2c5038;
         top: 100px;
         left: -100%;
