@@ -6,7 +6,7 @@ const bloque=document.querySelectorAll('.bloque')
 const li2= document.querySelectorAll('.li2')
 const bloque2=document.querySelectorAll('.bloque2')
 
-//cuando hacemos click en un li
+//funcion para cuando hacemos click en un li
     //quita de todos los .li y .bloque la clase activo
     //.li y .bloque con la posicion se añadimos la clase activo
 function recorrerMenus(li,bloque,nameClass){
@@ -24,3 +24,16 @@ function recorrerMenus(li,bloque,nameClass){
 
 recorrerMenus(li, bloque, "activo")
 recorrerMenus(li2, bloque2, "activo2")
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const loggedIn = localStorage.getItem('loggedIn') === 'true';
+    if (loggedIn) {
+        li.forEach((element,i)=>{
+            element.classList.remove("activo");
+            bloque[i].classList.remove("activo");
+        })
+        li[1].classList.add("activo");
+        bloque[1].classList.add("activo");
+    }
+})

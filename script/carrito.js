@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("finalizar-compra").addEventListener("click", function () {
         alert("Compra finalizada. ¡Gracias por tu compra!");
         localStorage.removeItem("carrito");
-        window.location.href = "main.html";
+        window.location.href = "pedido.html";
     });
 
     actualizarCarrito();
