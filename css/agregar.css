@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #343a40;
+    background-color: #c09540;
     color: white;
     padding: 15px;
 }
@@ -22,14 +22,22 @@ h1 {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    background-color: #007bff;
+    background-color: #f5a505;
     border-radius: 5px;
     border: none;
     cursor: pointer;
 }
+.btn-ver-carrito:hover, .btn-volver:hover{
+    background-color: #fffefd;
+    color: #473a20;
+}
+
+.btn-agregar:hover {
+    background-color: #8d683c;
+} 
 
 .btn-agregar {
-    background-color: #28a745;
+    background-color:   #f1ac35;
 }
 
 .productos {
@@ -43,7 +51,7 @@ h1 {
 .producto {
     width: 250px;
     padding: 15px;
-    background: white;
+    background: rgb(255, 255, 254);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -73,3 +81,5 @@ input[type="number"] {
     object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
     border-radius: 10px; /* Opcional: esquinas redondeadas */
 }
+
+
