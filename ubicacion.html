@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,30 +9,37 @@
     <link rel="stylesheet" href="css/style-cabecera.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style-ubicacion.css">
-    <style>
-        .contenedor{
-            margin-top: 90px;
-        }
-    </style>
+    <!-- script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/ubicacion.js"></script>
 </head>
 
-<body style="background-image: url(img/cafeteriaimg.jpg)">
+<body>
+    <!-- Encabezado -->
     <header>
         <div class="navigation">
             <input type="checkbox" id="check">
             <label for="check" class="check-btn">
                 <i class="fas fa-bars"></i>
             </label>
-            <a href="main.html"><img src="img/logocafe.png" class="logo"></img></a>
-            <div id="menu-container"></div>
+            <a href="main.html"><img src="img/logocafe.png" alt="Logo" class="logo"></a>
+            <ul>
+                <li><a href="/main.html">Home</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="/ubicacion.html">Ubicación</a></li>
+                <li><a href="/pedido.html">Pedidos</a></li>
+                <li><a id="bton-login" href="/login.html">Login</a></li>
+
+            </ul>
         </div>
     </header>
 
-    <!--ubicacion----------------------------------------------------->
+    <!-- Cuerpo -->
     <div class="contenedor">
-
         <div class="ubicaciones">
-
+            <!-- Ejemplo de una ubicación -->
             <div class="caja"
                 onclick="cambiarUbicacion('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.965943800567!2d-77.042793!3d-12.046374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAyJzQ3LjAiUyA3N8KwMDInMzQuMSJX!5e0!3m2!1ses!2spe!4v1633036787894!5m2!1ses!2spe', 'https://maps.app.goo.gl/4zDCoSrdFTj5mh9j8')">
                 <img src="img/ubicacion/lima.png" alt="Lima">
@@ -42,7 +49,6 @@
                     <p>Horario: 7 A.M. a 10:30 P.M.</p>
                 </div>
             </div>
-
             <div class="caja"
                 onclick="cambiarUbicacion('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.986908833934!2d-71.978536!3d-13.517089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDMxJzAxLjUiUyA3McKwNTgnNDIuNyJX!5e0!3m2!1ses!2spe!4v1633036787894!5m2!1ses!2spe', 'https://maps.app.goo.gl/y9Sp2UMwNd9M5cky6')">
                 <img src="img/ubicacion/cusco.jpg" alt="Cusco">
@@ -104,42 +110,36 @@
             </div>
         </div>
 
-
-        <div class="mapa-container"><!-- Mapa de Google Maps-------------------------------------->
-            <div class="mapa">
-                <h3>Buscar ubicación en el mapa</h3>
-                <iframe id="mapa-iframe"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.965943800567!2d-77.042793!3d-12.046374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAyJzQ3LjAiUyA3N8KwMDInMzQuMSJX!5e0!3m2!1ses!2spe!4v1633036787894!5m2!1ses!2spe"
-                    allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
-
-            <div class="boton-ver-mapa"><!--Ver mapa -->
-                <a id="enlace-ver-mapa" href="https://maps.app.goo.gl/4zDCoSrdFTj5mh9j8" target="_blank">Ver mapa</a>
+        <div class="columna-mapa">
+            <div class="mapa-container">
+                <div class="mapa">
+                    <iframe id="mapa-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.965943800567!2d-77.042793!3d-12.046374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAyJzQ3LjAiUyA3N8KwMDInMzQuMSJX!5e0!3m2!1ses!2spe"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="boton-mapa">
+                    <a id="enlace-ver-mapa" href="https://maps.app.goo.gl/4zDCoSrdFTj5mh9j8" target="_blank">
+                        <input type="button" value="Ir a la ubicación">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-
     <!-- Pie de página -->
-    <div class="footer">
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2025 Coffee Shop All rights reserved</p>
-                <div class="social-icons">
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Coffee Shop. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="/script/menu.js"></script>
-    <script type="text/javascript" src="codigo/register.js" defer></script>
-    <script type="text/javascript" src="codigo/logueado.js" defer></script>
+
 </body>
+
 </html>
