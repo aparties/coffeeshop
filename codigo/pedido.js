@@ -75,7 +75,7 @@ function validarcampo(message,e){
             field.classList.add('invalid')
             field.nextElementSibling.classList.add('error')//elemento hermano
             field.nextElementSibling.innerText = message;
-            focus(field)
+            field.focus()
         }else{
             field.classList.remove('invalid')
             field.nextElementSibling.classList.add('error');
@@ -83,13 +83,18 @@ function validarcampo(message,e){
         }
 }
 
-direccion.forEach(element => element.addEventListener('blur', (e) => validarcampo('Ingresa una direccion correcta, por favor' , e)))
-
-botonDelivery.addEventListener('click' , () => {
-    if(!direccion[0].value){ 
+function irVentanaPago(index){
+    if(!direccion[index].value){ 
         alert('Ingrese una direccion')
         return;
     }
-    localStorage.setItem('direccionEnvio', direccion[0].value);
+    localStorage.setItem('direccionEnvio', direccion[index].value);
     irVentanaEspecifica(2);
-})
+}
+
+
+direccion.forEach(element => element.addEventListener('blur', (e) => validarcampo('Ingresa una direccion correcta, por favor' , e)))
+botonDelivery.addEventListener('click' , () => irVentanaPago(0))
+botonRetiro.addEventListener('click' , () => irVentanaPago(0))
+
+
