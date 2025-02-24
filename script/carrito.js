@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         totalCarrito.textContent = `Total: S/ ${total.toFixed(2)}`;
         localStorage.setItem("carrito", JSON.stringify(carrito));
+        localStorage.setItem('PrecioDeCompra',total.toFixed(2))
     }
 
     function obtenerPrecioProducto(nombre) {
