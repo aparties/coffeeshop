@@ -132,42 +132,43 @@
                             <div class="bloque2 activo2">
                                 <form action="" class="formulario">
                                     <p>Confirme la operacion, sin datos de comprobantes<p><br>
-                                    <input type="submit" class="btn" value="Enviar">
+                                    <input type="button" class="btnDatos" value="Enviar">
                                 </form>
                             </div>
                             <div class="bloque2">
                                 <form class="formulario">
                                     <label for="dni">Tipo de documento</label>
-                                    <select name="dni"placeholder="Seleccione uno..">
+                                    <select id='tipoIndentf' name="dni">
+                                        <option>Seleccione uno..</option>
                                         <option>DNI</option>
                                         <option>Carne de extranjeria</option>
                                         <option>Pasaporte</option>
                                     </select><br>
 
-                                    <label for="dato">Numero de Identificación</label>
-                                    <input id="text"type="dato" name="txtIndentificacion" value="" placeholder="Ingrese el numero"required> <br>
+                                    <label for="Identificación">Numero de Identificación</label>
+                                    <input id="numeroIndentf"type="dato" name="txtIndentificacion" value="" placeholder="Ingrese el numero"required> <br>
 
                                     <label for="idEmail">Correo Electrónico</label>
-                                    <input id="idEmail"type="email" name="txtEmail" value="" placeholder="Correo Electrónico"required><br>
+                                    <input id="email"type="email" name="txtEmail" value="" placeholder="Correo Electrónico" required><br>
                                     
-                                    <input type="submit" class="btn" value="Enviar">
+                                    <input type="button" class="btnDatos" value="Enviar">
                                 </form>
                             </div>
                             <div class="bloque2">
                                 <form class="formulario">
-                                    <label for="dato">Direccion</label>
-                                    <input id="text"type="dato" name="txtdato" value="" placeholder="Ingrese su direccion"required> <br>
+                                    <label for="direccion">Direccion</label>
+                                    <input id="direccion" type="text" name="txtdato" value="" placeholder="Ingrese su direccion"required> <br>
 
                                     <label for="ruc">Numero de RUC </label>
-                                    <input id="text"type="ruc" name="txtRuc" value="" placeholder="Ingrese su numero"required> <br>
+                                    <input id="ruc"type="text" name="txtRuc" value="" placeholder="Ingrese su numero"required> <br>
 
-                                    <label for="email">Correo Electrónico</label>
+                                    <label for="idEmail">Correo Electrónico</label>
                                     <input id="idEmail"type="email" name="txtEmail" value="" placeholder="Correo Electrónico"required><br>
 
-                                    <label for="razon">Razon Social</label>
-                                    <input id="text"type="razon" name="txtRazon" value="" placeholder="Ingrese su razon social"required> <br>
+                                    <label for="razonSocial">Razon Social</label>
+                                    <input id="razonSocial" type="text" name="txtRazon" value="" placeholder="Ingrese su razon social"required> <br>
                                     
-                                    <input type="submit" class="btn" value="Enviar">
+                                    <input type="button" class="btnDatos" value="Enviar">
                                 </form>
                             </div>
 

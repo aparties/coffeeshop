@@ -77,7 +77,7 @@
     transition: opacity 0.3s ease-in-out, z-index 0s linear 0.3s;
 }
 
-.bloque.activo {
+.bloque.activo, .bloque2.activo2 {
     z-index: 10;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
@@ -118,7 +118,6 @@
 .subcontenedor2{
     position: relative;
     height: 80%;
-
 }
 
 .bloque2{
@@ -131,12 +130,6 @@
     height: 100%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, z-index 0s linear 0.3s;
-}
-
-.bloque2.activo2 {
-    z-index: 10;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
 }
 
 .formulario {
@@ -161,7 +154,7 @@ input, select {
     border-radius: 15px;
 }
 
-.btn {
+.btn, .btnDatos {
     width: 35%;
     color: white;
     background-color: #6e452a;
@@ -172,7 +165,7 @@ input, select {
     border: none;
 }
 
-.btn:hover {
+.btn:hover, .btnDatos:hover {
     background-color: #b2cb8f;
     color: rgb(1, 1, 1);
     font-weight: 900;

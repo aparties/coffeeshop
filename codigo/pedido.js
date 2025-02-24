@@ -114,4 +114,35 @@ function pagarBoton(){
 
 /*CUARTA VENTANA - DATOS*/
 
+const botonTerminar = document.querySelectorAll('.btnDatos')
+botonTerminar.forEach((element,index) =>{ 
+    element.addEventListener('click', function(event) {
+        if(index === 0){
+            alert('Compra finalizada. ¡Gracias por tu compra!')
+        }else if(index === 1){
+            const tipoIndent = document.getElementById('tipoIndentf').value;
+            const numero = document.getElementById('numeroIndentf').value;
+            const email = document.getElementById('email').value;
+            
+            if(tipoIndent.trim().length===0 || numero.trim().length===0 || email.trim().length===0){
+                alert('Complete todos los campos')
+                return;
+            }
+            alert(`Tipo Documento: ${tipoIndent}\nNumero de documento: ${numero}\nCorreo Electronico: ${email}\nCompra finalizada. ¡Gracias por tu compra!`)
+        
+        }else {
+            const direccion = document.getElementById('direccion').value;
+            const ruc = document.getElementById('ruc').value;
+            const idEmail = document.getElementById('idEmail').value;
+            const razonSocial = document.getElementById('razonSocial').value;
+            
+            if(direccion.trim().length===0 || ruc.trim().length===0 || idEmail.trim().length===0 || razonSocial.trim().length ===0){
+                alert('Complete todos los campos')
+                return;
+            }
 
+            alert(`Numero de RUC: ${ruc}\nDireccion: ${direccion}\nCorreo Electronico: ${idEmail}\nRazon Social: ${razonSocial}\nCompra finalizada. ¡Gracias por tu compra!`)
+        }
+        
+    });
+})
