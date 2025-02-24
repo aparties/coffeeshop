@@ -75,18 +75,18 @@ const direccion= document.querySelectorAll('.direccion-envio')
 
 //funcion que validen el campo de direccion
 function validarcampo(message,e){
-        const field= e.target;
-        const fielValue = e.target.value
-        if(fielValue.trim().length===0){
-            field.classList.add('invalid')
-            field.nextElementSibling.classList.add('error')//elemento hermano
-            field.nextElementSibling.innerText = message;
-            field.focus()
-        }else{
-            field.classList.remove('invalid')
-            field.nextElementSibling.classList.add('error');
-            field.nextElementSibling.innerText ="";
-        }
+    const field= e.target;
+    const fielValue = e.target.value
+    if(fielValue.trim().length===0){
+        field.classList.add('invalid')
+        field.nextElementSibling.classList.add('error')//elemento hermano
+        field.nextElementSibling.innerText = message;
+        field.focus()
+    }else{
+        field.classList.remove('invalid')
+        field.nextElementSibling.classList.add('error');
+        field.nextElementSibling.innerText ="";
+    }
 }
 
 //funcion navegar a siguiente pagos
@@ -112,9 +112,11 @@ function pagarBoton(){
     alert('Elija un opcion a pagar')
 }
 
-/*CUARTA VENTANA - DATOS*/
 
+/*CUARTA VENTANA - DATOS*/
 const botonTerminar = document.querySelectorAll('.btnDatos')
+
+//funcion que procesa los formularios final del comprobante de pago.
 botonTerminar.forEach((element,index) =>{ 
     element.addEventListener('click', function(event) {
         if(index === 0){
@@ -145,8 +147,9 @@ botonTerminar.forEach((element,index) =>{
         }
         
         localStorage.removeItem('carrito');
-        localStorage.removeItem('PrecioDeCompra')
-
-
+        localStorage.removeItem('PrecioDeCompra');
+        localStorage.removeItem('direccionEnvio');
+        localStorage.removeItem('pagoRealizado');
+        window.location.href = "main.html"
     });
 })
