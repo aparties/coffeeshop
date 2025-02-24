@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 })
 
+/*PRIMERA VENTANA - PEDIDOS*/
 //Funcion para registrar al cliente para que compre
 function registrarEmail(){
     const email = document.getElementById('tem-email').value;
@@ -55,16 +56,13 @@ function registrarEmail(){
     window.location.href='register.html'
 }
 
+//Para iniciar sesion
 function iniciarLogin(){
     window.location.href='login.html'
     localStorage.setItem('prevPage', window.location.href);
 }
 
-
-
-
-
-
+/*SEGUNDA VENTANA - PEDIDOS*/
 const botonDireccion = document.getElementById('boton-direccion-del')
 const direccionDel = document.querySelector('.direccion-envio-del')
 
