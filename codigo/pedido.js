@@ -63,8 +63,10 @@ function iniciarLogin(){
 }
 
 /*SEGUNDA VENTANA - PEDIDOS*/
-const botonDireccion = document.getElementById('boton-direccion-del')
-const direccionDel = document.querySelector('.direccion-envio-del')
+const botonDelivery = document.getElementById('boton-direccion1')
+const botonRetiro = document.getElementById('boton-direccion2')
+const direccion= document.querySelectorAll('.direccion-envio')
+
 
 function validarcampo(message,e){
         const field= e.target;
@@ -81,8 +83,13 @@ function validarcampo(message,e){
         }
 }
 
-direccionDel.addEventListener('blur', (e) => validarcampo('Ingresa una direccion correcta' , e))
+direccion.forEach(element => element.addEventListener('blur', (e) => validarcampo('Ingresa una direccion correcta, por favor' , e)))
 
-botonDireccion.addEventListener('click' , () => {
-
+botonDelivery.addEventListener('click' , () => {
+    if(!direccion[0].value){ 
+        alert('Ingrese una direccion')
+        return;
+    }
+    localStorage.setItem('direccionEnvio', direccion[0].value);
+    irVentanaEspecifica(2);
 })
