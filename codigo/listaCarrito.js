@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',() =>{
     const detalleCarrito = document.getElementById("detallePedido");
     detalleCarrito.style.border="1px solid black";  
-    detalleCarrito.style.width="300px";
+    detalleCarrito.style.width="240px";
     detalleCarrito.style.height="50%";
     detalleCarrito.style.display ="flex"
     detalleCarrito.style.alignItems ="center"
@@ -19,13 +19,14 @@ document.addEventListener('DOMContentLoaded',() =>{
 
     detalleCarrito.style.display ='flex'
     detalleCarrito.style.flexDirection ='column'
-    detalleCarrito.innerHTML=`<h3 class="detalle-pago">Detalle de carrito</h3><br>
+    detalleCarrito.innerHTML = `<br>
+                    <h2 class="detalle-pago">Detalle de carrito</h2><br>
+                    <h3 class="detalle-pago" style="font-weight:bold">${productos}</h3>
+                    <br>
                     <h3 class="detalle-pago">Total a pagar:</h3>
-                      <h3 class="detalle-pago">${productos}</h3>
-                      <br>
-                      <span class ="pago-Valor">S/. ${precioDeCompra}</span>
-                      <br>
-                      <button type="button" class="boton-return" onclick="irCarrito()" style="padding: 10px; border-radius: 10px;">Regresar al Carrito</button>`
+                    <span class ="pago-Valor">S/. ${precioDeCompra}</span>
+                    <br>
+                    <button type="button" class="boton-return" onclick="irCarrito()" style="padding: 10px;border-radius: 10px;">Regresar al Carrito</button>`;
 
 })
 
