@@ -21,7 +21,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })
 
-const botonPagat = document.getElementsByClassName("btn-pagar")
+const botonPagar = document.querySelector(".btn-pagar")
+
 function  pagarOperacion(){
+
+    if(window.location.href.includes("pagoAgentes.html")){
+        localStorage.setItem("pagoRealizado","Pago en Efectivo")
     
+    }else if(window.location.href.includes("pagoTarjeta.html")){
+        localStorage.setItem("pagoRealizado","Pago con Tarjeta")
+    
+    }else if(window.location.href.includes("pagoYape.html")){ 
+        localStorage.setItem("pagoRealizado","Pago con Yape")
+    }
+
+    window.location.href='pedido.html'
 }
+
+botonPagar.addEventListener('click' , pagarOperacion)

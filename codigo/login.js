@@ -26,7 +26,7 @@ function iniciarSesion() {
         localStorage.setItem('userEmail', email.value);
         localStorage.setItem('isFirstVisit', 'true')
         const prevPage = localStorage.getItem('prevPage');
-        window.location.href = prevPage ? prevPage : 'main.html';
+        window.location.href = prevPage ? prevPage : 'agregar.html';
     } else {
         alert('Correo o contraseña incorrectos');
         location="login.html";

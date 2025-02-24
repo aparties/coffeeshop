@@ -43,8 +43,10 @@ recorrerMenus(li2, bloque2, "activo2")
 document.addEventListener("DOMContentLoaded", function () {
     const loggedIn = localStorage.getItem('loggedIn') === 'true';
     const direccionEnvio = localStorage.getItem('direccionEnvio');
-    
-    if(loggedIn && direccionEnvio) {
+    const medioPago = localStorage.getItem("pagoRealizado")
+    if(loggedIn && direccionEnvio && medioPago) {
+        irVentanaEspecifica(3);
+    }else if(loggedIn && direccionEnvio) {
         irVentanaEspecifica(2);
     }else if (loggedIn) {
         irVentanaEspecifica(1);
@@ -102,6 +104,13 @@ botonDelivery.addEventListener('click' , () => irVentanaPago(0))
 botonRetiro.addEventListener('click' , () => irVentanaPago(1))
 
 /*TERCERA VENTANA - PAGOS*/
+function regresarEntrega(){
+    irVentanaEspecifica(1);
+}
+
+function pagarBoton(){
+    alert('Elija un opcion a pagar')
+}
 
 
 
