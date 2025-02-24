@@ -43,7 +43,7 @@ recorrerMenus(li2, bloque2, "activo2")
 document.addEventListener("DOMContentLoaded", function () {
     const loggedIn = localStorage.getItem('loggedIn') === 'true';
     const direccionEnvio = localStorage.getItem('direccionEnvio');
-
+    
     if(loggedIn && direccionEnvio) {
         irVentanaEspecifica(2);
     }else if (loggedIn) {
