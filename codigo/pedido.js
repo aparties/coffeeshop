@@ -67,7 +67,7 @@ const botonDelivery = document.getElementById('boton-direccion1')
 const botonRetiro = document.getElementById('boton-direccion2')
 const direccion= document.querySelectorAll('.direccion-envio')
 
-
+//funcion que validen el campo de direccion
 function validarcampo(message,e){
         const field= e.target;
         const fielValue = e.target.value
@@ -83,6 +83,7 @@ function validarcampo(message,e){
         }
 }
 
+//funcion navegar a siguiente pagos
 function irVentanaPago(index){
     if(!direccion[index].value){ 
         alert('Ingrese una direccion')
@@ -95,6 +96,6 @@ function irVentanaPago(index){
 
 direccion.forEach(element => element.addEventListener('blur', (e) => validarcampo('Ingresa una direccion correcta, por favor' , e)))
 botonDelivery.addEventListener('click' , () => irVentanaPago(0))
-botonRetiro.addEventListener('click' , () => irVentanaPago(0))
+botonRetiro.addEventListener('click' , () => irVentanaPago(1))
 
 
