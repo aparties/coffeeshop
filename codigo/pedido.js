@@ -112,5 +112,6 @@ function pagarBoton(){
     alert('Elija un opcion a pagar')
 }
 
+/*CUARTA VENTANA - DATOS*/
 
 
