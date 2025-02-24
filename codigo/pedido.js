@@ -39,7 +39,7 @@ recorrerMenus(li, bloque, "activo")
 recorrerMenus(li2, bloque2, "activo2")
 
 
-//Evente que determina la ventana de posicion
+//Evento que determina la posicion de la ventana
 document.addEventListener("DOMContentLoaded", function () {
     const loggedIn = localStorage.getItem('loggedIn') === 'true';
     const direccionEnvio = localStorage.getItem('direccionEnvio');
