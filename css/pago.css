@@ -4,18 +4,37 @@ body{
 }
 
 .pago {
-    max-width: 700px;
+    width: 500px;
+    max-width: 900px;
     margin: 0 auto;
     margin: 0;
 }
 
+/*Activa cuando ya tiene el carrito cargado*/
 .valor{
     width: 200px;
     align-items: center;
+    justify-content: center;
     border: 1px solid #fabf85;
     display: none;
 }
 
+.detalle-pago{
+    display: inline;
+    text-align:  center;
+    border: 1px solid #fabf85;
+    margin: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pago-Valor{
+    color: rgb(203, 14, 14);
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+/*-------------------*/
 h1 {
     color: #070707;
     margin-bottom: 20px;
