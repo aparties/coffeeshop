@@ -167,7 +167,7 @@ label, h2 {
 }
 
 input, select {
-    width: 50%;
+    width: 100%;
     position: relative;
     right: 0;
     padding: 10px;
@@ -176,7 +176,7 @@ input, select {
 }
 
 .btn {
-    width: 25%;
+    width: 35%;
     color: white;
     background-color: #6e452a;
     cursor: pointer;

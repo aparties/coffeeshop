@@ -16,6 +16,7 @@ const eliminarClase = ( pestaña, ventana, clase) => {
     })
 }
 
+//Funcion para navegar entre ventanas
 function recorrerMenus(li, bloque, nameClass){
     li.forEach((element , i)=>{
         element.addEventListener('click',()=>{
@@ -26,9 +27,6 @@ function recorrerMenus(li, bloque, nameClass){
     })
 }
 
-recorrerMenus(li, bloque, "activo")
-recorrerMenus(li2, bloque2, "activo2")
-
 //Funcion para ir a la ventana especifica
 const irVentanaEspecifica = (numero) =>{ 
     eliminarClase(li, bloque,'activo');
@@ -36,6 +34,12 @@ const irVentanaEspecifica = (numero) =>{
     bloque[numero].classList.add("activo");
 }
 
+//llamamos a las ventanas para recorrer
+recorrerMenus(li, bloque, "activo")
+recorrerMenus(li2, bloque2, "activo2")
+
+
+//Evente que determina la ventana de posicion
 document.addEventListener("DOMContentLoaded", function () {
     const loggedIn = localStorage.getItem('loggedIn') === 'true';
     if (loggedIn) {
@@ -43,18 +47,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 })
 
-
 //Funcion para registrar al cliente para que compre
 function registrarEmail(){
     const email = document.getElementById('tem-email').value;
     localStorage.setItem('temporalEmail', email);
+    localStorage.setItem('prevPage', window.location.href);
     window.location.href='register.html'
 }
+
+function iniciarLogin(){
+    window.location.href='login.html'
+    localStorage.setItem('prevPage', window.location.href);
+}
+
+
+
+
+
 
 const botonDireccion = document.getElementById('boton-direccion-del')
 const direccionDel = document.querySelector('.direccion-envio-del')
 
-function validateEmptyField(message,e){
+function validarcampo(message,e){
         const field= e.target;
         const fielValue = e.target.value
         if(fielValue.trim().length===0){
@@ -69,7 +83,8 @@ function validateEmptyField(message,e){
         }
 }
 
+direccionDel.addEventListener('blur', (e) => validarcampo('Ingresa una direccion correcta' , e))
+
 botonDireccion.addEventListener('click' , () => {
-    direccionDel.addEventListener('blur', (e) => validateEmptyField('Ingresa una direccion correcta' , e))
+
 })
-    

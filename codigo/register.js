@@ -32,4 +32,8 @@ function registrarCliente(){
 
     alert('Datos guardados con éxito');
 
+    //ultima pagina que lo invoco
+    const prevPage = localStorage.getItem('prevPage');
+    window.location.href = prevPage ? prevPage : 'login.html';
+
 }
