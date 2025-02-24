@@ -144,5 +144,9 @@ botonTerminar.forEach((element,index) =>{
             alert(`Numero de RUC: ${ruc}\nDireccion: ${direccion}\nCorreo Electronico: ${idEmail}\nRazon Social: ${razonSocial}\nCompra finalizada. ¡Gracias por tu compra!`)
         }
         
+        localStorage.removeItem('carrito');
+        localStorage.removeItem('PrecioDeCompra')
+
+
     });
 })
