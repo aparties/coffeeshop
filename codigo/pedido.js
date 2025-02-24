@@ -42,7 +42,11 @@ recorrerMenus(li2, bloque2, "activo2")
 //Evente que determina la ventana de posicion
 document.addEventListener("DOMContentLoaded", function () {
     const loggedIn = localStorage.getItem('loggedIn') === 'true';
-    if (loggedIn) {
+    const direccionEnvio = localStorage.getItem('direccionEnvio');
+
+    if(loggedIn && direccionEnvio) {
+        irVentanaEspecifica(2);
+    }else if (loggedIn) {
         irVentanaEspecifica(1);
     }
 })
@@ -62,7 +66,7 @@ function iniciarLogin(){
     localStorage.setItem('prevPage', window.location.href);
 }
 
-/*SEGUNDA VENTANA - PEDIDOS*/
+/*SEGUNDA VENTANA - ENTREGA*/
 const botonDelivery = document.getElementById('boton-direccion1')
 const botonRetiro = document.getElementById('boton-direccion2')
 const direccion= document.querySelectorAll('.direccion-envio')
@@ -93,9 +97,11 @@ function irVentanaPago(index){
     irVentanaEspecifica(2);
 }
 
-
 direccion.forEach(element => element.addEventListener('blur', (e) => validarcampo('Ingresa una direccion correcta, por favor' , e)))
 botonDelivery.addEventListener('click' , () => irVentanaPago(0))
 botonRetiro.addEventListener('click' , () => irVentanaPago(1))
+
+/*TERCERA VENTANA - PAGOS*/
+
 
 
