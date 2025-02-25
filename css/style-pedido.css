@@ -223,3 +223,18 @@ input, select {
     color: rgb(255, 0, 0);
     display: block;
 }
+
+.activarCasilla{
+    border: 1px solid black;
+    width: 240px;
+    height:50%;
+    display: flex;
+    align-items: center;
+    position:  relative;
+    top: 25%;
+    bottom: 25%;
+    background-color: aquamarine;
+    margin-left: 100px;
+    border-radius: 20px;
+
+}

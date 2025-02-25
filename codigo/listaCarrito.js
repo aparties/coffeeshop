@@ -1,16 +1,6 @@
 document.addEventListener('DOMContentLoaded',() =>{
     const detalleCarrito = document.getElementById("detallePedido");
-    detalleCarrito.style.border="1px solid black";  
-    detalleCarrito.style.width="240px";
-    detalleCarrito.style.height="50%";
-    detalleCarrito.style.display ="flex"
-    detalleCarrito.style.alignItems ="center"
-    detalleCarrito.style.position="relative"
-    detalleCarrito.style.top = "25%"
-    detalleCarrito.style.bottom  = "25%"
-    detalleCarrito.style.backgroundColor="skyblue"
-    detalleCarrito.style.marginLeft = "100px"
-    detalleCarrito.style.borderRadius = "20px"
+    detalleCarrito.classList.add('activarCasilla'); //activa en el estilo de css.
     
     let carrito = JSON.parse(localStorage.getItem('carrito'));
     const precioDeCompra = localStorage.getItem('PrecioDeCompra');
@@ -27,7 +17,6 @@ document.addEventListener('DOMContentLoaded',() =>{
                     <span class ="pago-Valor">S/. ${precioDeCompra}</span>
                     <br>
                     <button type="button" class="boton-return" onclick="irCarrito()" style="padding: 10px;border-radius: 10px;">Regresar al Carrito</button>`;
-
 })
 
 const botonRet = document.querySelector("boton-return")
