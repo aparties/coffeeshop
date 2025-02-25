@@ -1,13 +1,12 @@
 body{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: auto;
 }
 
 .pago {
     width: 500px;
     max-width: 900px;
-    margin: 0 auto;
     margin: 0;
 }
 

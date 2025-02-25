@@ -224,17 +224,25 @@ input, select {
     display: block;
 }
 
+.contenedorCarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100vh;
+    margin-left: 25px;
+}
+
 .activarCasilla{
     border: 1px solid black;
-    width: 240px;
-    height:50%;
+    width: 230px;
+    min-width: 100px;
+    height: auto;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
-    position:  relative;
-    top: 25%;
-    bottom: 25%;
     background-color: aquamarine;
-    margin-left: 100px;
     border-radius: 20px;
-
+    padding: 10px;
 }

@@ -81,7 +81,7 @@ function validarcampo(message,e){
         field.classList.add('invalid')
         field.nextElementSibling.classList.add('error')//elemento hermano
         field.nextElementSibling.innerText = message;
-        field.focus()
+        return;
     }else{
         field.classList.remove('invalid')
         field.nextElementSibling.classList.add('error');
