@@ -3,7 +3,7 @@ function registrarCliente(){
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
 
-    if(nombre=="" || email =="" || password==""){
+    if(nombre.trim().length===0 || email.trim().length===0 || password.trim().length===0){
         alert('Ingrese todos campos completos')
         return;
     }
